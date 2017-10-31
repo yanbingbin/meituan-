@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" cont$arrayent="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>登录</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+ </head>
+ <body>
+	<div class="main">
+		<div id="login-logo">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+		</div>
+		<div id="login">
+			<form action="">
+				<p class="text">
+					<span class="text-left">账号密码登录</span>
+					<span class="text-right"><i id="login-phone"></i>&nbsp;<a href="#">手机号登录</a></span>
+				</p>
+				<p class="logininput">
+					<label for="uname">账号:&nbsp;</label>
+					<input type="text" id="uname" name="uname" required placeholder="请输入账号" autofocus
+						minlength="6" maxlength="16">
+					<span class="tip">*该用户不存在</span>
+				</p>
+				<p class="logininput">
+					<label for="upwd">密码:&nbsp;</label>
+					<input type="password" id="upwd" name="upwd" required placeholder="请输入密码" 
+						minlength="6" maxlength="16">
+					<span class="tip">*密码错误</span>
+				</p>
+				<p class="text">
+					<span class="text-left"><label for="checkbtn">自动登录</label><input type="checkbox" id="checkbtn"></span>
+					<span class="text-right"><a href="#" class="forget clear">忘记密码？</a></span>
+				</p>
+				<input type="submit" id="btn" value="点我登录"><br>
+				<a href="register.html" target="_black" class="to-register">没有账号?</a>
+
+			</form>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-nav clear">
+			<ul>
+				<li class="first"><a href="">关于美团</a></li>
+				<li><a href="help.html">美团承诺</a></li>
+				<li><a href="help.html">加入我们</a></li>
+				<li><a href="help.html">商家入驻</a></li>
+				<li><a href="help.html">帮助中心</a></li>
+				<li class="last"><a href="help.html">美团手机版</a></li>
+			</ul>
+			<a href="help.html"><img src="images/footer-commitment.png" alt="美团保障"></a>
+		</div>
+		<div class="copyright">
+			<p>
+				©2017 美团网团购 meituan.com 京ICP证070791号 京公网安备11010502025545号 电子公告服务规则
+			</p>
+		</div>
+	</footer>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/login.js"></script>
+ </body>
+</html>

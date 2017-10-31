@@ -1,0 +1,96 @@
+
+#wymessage{
+    width:930px;
+    min-height: 1000px;
+    box-sizing: border-box;
+
+}
+#wymessage>a{
+    float: right;
+    color: #00C9B3;
+    margin-right:10px;
+    margin-top:10px;
+}
+#wymessage>a:nth-child(2){
+    color: #666;
+}
+#m1{
+    font-size: 20px;
+    color: black;
+}
+#wymessage>.message-all{
+    width:930px;
+    box-sizing: border-box;
+    min-height: 500px;
+    border:1px solid #E5E5E5;
+    border-radius: 4px;
+    padding: 15px 20px;
+    background: #fff;
+}
+#wymessage>.message-all>.box-all{
+    width:910px;
+
+}
+#wymessage>.message-all>.box-all>.box{
+   font-size: 14px;
+    height:38px;
+    border: 1px solid #E5E5E5;
+    float:left;
+    line-height: 38px;
+    margin-right: 20px;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.box-all div.active{
+    color: white;
+    background-color: #00c3b0;
+}
+#put2{
+    margin-left:20px;
+}
+#message{
+    margin-top: 20px;
+    width:910px;
+    min-height: 1000px;
+    box-sizing: border-box;
+}
+
+#message>.message-top .star span{
+    display: inline-block;
+    margin-right: 20px;
+}
+#message>.message-top>img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    float: left;
+    border: none;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+}
+#message>.message-top>.user-message>span{
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+#message>.message-center{
+    margin-left:80px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#page{
+    text-align: center;
+}
+#page>ul>li{
+    list-style:none;
+    display:inline;
+    margin:0 20px;
+}
+#page>ul>li>a{
+    color:#00c3b0 ;
+}

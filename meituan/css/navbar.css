@@ -1,0 +1,52 @@
+#zhilian{
+    padding:30px 40px;
+}
+#zhilian>.nav-show>li{
+    padding:10px;
+    border-bottom:1px solid #dddcdd;
+}
+#zhilian>.nav-show>li>.nav-down{
+    cursor: pointer;
+   margin:10px 0 0 10px;
+}
+#zhilian>.nav-show>li>.nav-hide{
+    display:none;
+    margin:10px 0 0 10px;
+}
+#zhilian>.nav-show>li>h4>i{
+    height: 0;
+    width: 0;
+    line-height:0;
+    font-size: 0;
+    border: 5px dashed transparent;
+    font-style: italic;
+    border-top: 5px solid #999;
+    margin-top:10px;
+    float:right;
+}
+#reservationfaq{
+    padding:30px 40px;
+}
+#reservationfaq>.nav-show>li{
+    padding:10px;
+    border-bottom:1px solid #dddcdd;
+}
+#reservationfaq>.nav-show>li>.nav-down{
+    cursor: pointer;
+    margin:10px 0 0 10px;
+}
+#reservationfaq>.nav-show>li>.nav-hide{
+    display:none;
+    margin:10px 0 0 10px;
+}
+#reservationfaq>.nav-show>li>h4>i{
+    height: 0;
+    width: 0;
+    line-height:0;
+    font-size: 0;
+    border: 5px dashed transparent;
+    font-style: italic;
+    border-top: 5px solid #999;
+    margin-top:10px;
+    float:right;
+}

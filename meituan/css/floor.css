@@ -1,0 +1,132 @@
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+a{
+    color:#666;
+    opacity:.8;
+}
+a:hover{
+    text-decoration:none;
+    opacity:1;
+}
+.floor{
+    width:1170px;
+    margin:15px auto;
+}
+.floor-content{font-size:10px;}
+#floor-top{
+    margin-bottom: 15px;
+    padding-top:20px;
+}
+#floor-top .left{
+    float:left;
+}
+#floor-top img{
+    vertical-align: bottom;
+}
+#floor-top .left a{
+    font-size:18px;
+}
+#floor-top .right{
+    float:right;
+}
+#floor-top .left a:hover,#floor-top .right a:hover{
+    color: #34C4B7;
+}
+#floor-top .right li{
+    float:left;
+}
+#floor-top .right li:last-child a{
+    margin-left: 10px;
+}
+.floor-content{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.floor-content .product{
+    width:292.5px;
+    height:312px;
+    border:1px solid #eee;
+    box-sizing: border-box;
+    position:relative;
+}
+.floor-content .product img:first-child{
+    width:258px;
+    height:153px;
+    position:absolute;
+    left:15px;
+    top:10px;
+    transition:all .5s linear;
+}
+.floor-content .product img:first-child:hover{
+    transform: scale(1.02);
+}
+.floor-content .desc{
+    position:absolute;
+    left:15px;
+    top:180px;
+    width:258px;
+}
+.floor-content .desc p.subName{
+    overflow: hidden;
+    height: 20px;
+}
+.floor-content .product .name{
+    font-weight: bold;
+    font-size: 15px;
+    color: #666;
+    overflow: hidden;
+    height: 23px;
+}
+.floor-content .product .sale{
+    margin-top: 5px;
+}
+.floor-content .product .price1{
+     color:#F76120;
+     font-size: 20px;
+     float:left;
+ }
+.floor-content .product .price2{
+    margin: 8px 5px;
+	
+    float:left;
+}
+.floor-content .product .price2 span{
+	font-size:8px;
+    text-decoration: line-through;
+    margin-left: 2px;
+}
+.floor-content .product .sold{
+	font-size:8px;
+    float: right;
+    margin-top:8px;
+}
+.floor-content .product .assess{
+    position:absolute;
+    bottom:15px;
+    border-top:1px dotted #eee;
+    width:258px;
+    right:15px;
+}
+.floor-content .product .assess span,.floor-content .product .assess img{
+   margin-top: 5px;
+    width:80px;
+    float:right;
+}
+.floor-content .product .assess span{
+    margin-top: 10px;
+}
+ .floor-bottom{
+    background-color:#f6f6f6;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+}
+.floor-bottom a:hover{
+    color:#34C4B7;
+}
+
+ 

@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>首页</title>
+  <link rel="stylesheet" href="css/floor.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/myUI.css">
+ <link rel="stylesheet" href="css/nav-aside.css">
+ <link rel="stylesheet" href="css/nav_middle_right.css">
+ <link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="css/skip.css">
+ <link rel="stylesheet" href="css/slider.css">	
+ </head>
+ <body>
+	<div class="main">
+		<!--顶部信息-->
+		<div id="topmsg">
+			<ul id="topmsg-left">
+				<li><img src="images/star1.png" alt="">&nbsp;收藏美团</li>
+				<li id="loginSession"><a href="login.html" target="_block" class="loginColor">登录</a>&nbsp;&nbsp;
+					<a href="register.html">注册</a>&nbsp;&nbsp;|
+				</li>
+			</ul>
+			<ul id="topmsg-right">
+				<li class="nabla"><a href="order.html">我的订单</a></li>
+				<li class="nabla dropdown account">
+					<a class="dropdown-btn" data-trigger="dropdown" href="order.html">我的美团&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="order.html">我的订单</a></li>
+						<li class="item"><a href="order.html">我的评价</a></li>
+						<li class="item"><a href="order.html">我的收藏</a></li>
+						<li class="item"><a href="order.html">抵用券</a></li>
+						<li class="item"><a href="order.html">我的余额</a></li>
+						<li class="item"><a href="order.html">账户设置</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown history">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">最近浏览&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="empty">暂无浏览记录</li>
+					</ul>
+				</li>
+				<li class="nabla dropdown isSale">
+					<a class="dropdown-btn" data-trigger="dropdown" href="help.html">联系客服&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="help.html">申请退款</a></li>
+						<li class="item"><a href="help.html">申请退换货</a></li>
+						<li class="item"><a href="help.html">查看美团券</a></li>
+						<li class="item"><a href="help.html">换绑手机</a></li>
+						<li class="item"><a href="help.html">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown merchant">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我是商家&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="merchantCenter.html">商家合作中心</a></li>
+						<li class="item"><a href="merchantCenter.html">我想合作</a></li>
+						<li class="item"><a href="merchantCenter.html">手机免费开店</a></li>
+						<li class="item"><a href="merchantCenter.html">商家营销平台</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown recruit">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">代理商招募&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="agency.html">餐饮代理商招募</a></li>
+						<li class="item"><a href="agency.html">非餐饮代理商招募</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown more">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">更多&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="javascript:;">手机版</a></li>
+						<li class="item"><a href="javascript:;">邀请好友</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--头部-->
+		<div id="header-top" class="clear">
+			<a href="index.html" id='logo'>
+				<img src="images/logo.png" />
+			</a>
+			<div id="weizi">
+				<h2>杭州</h2>
+				<a href="#">切换城市</a>
+			</div>
+			<div id="top-input" class="clear">
+				<form action="">
+					<div id="check">
+						<ul id="check-boxes">
+							<li class="check-box nabla" id="check-box1"><span>团购</span><i></i></li>
+							<li class="check-box" id="check-box2"><span>商家</span></li>
+						</ul>
+					<input type="text" class="search" id="search" placeholder="请输入商品名称,地址等">
+					<input type="submit" value="搜索" id="sousuo">
+					</div>
+					<ul id="check-list">
+						<li><a href="javascript:;">火锅</a></li>
+						<li><a href="javascript:;">锅内锅外</a></li>
+						<li><a href="javascript:;">自助</a></li>
+						<li><a href="javascript:;">蛋糕</a></li>
+						<li><a href="javascript:;">哈根达斯</a></li>
+						<li><a href="javascript:;">巴菲盛宴</a></li>
+						<li><a href="javascript:;">烤肉</a></li>
+						<li><a href="javascript:;">知味观</a></li>
+						<li><a href="javascript:;">肯德基</a></li>
+					</ul>
+				</form>
+			</div>
+			<div id="header-right">
+				<ul>
+					<li><a href="help.html"><img src="images/1.png" ></a></li>
+					<li><a href="help.html"><img src="images/2.png" ></a></li>
+					<li><a href="help.html"><img src="images/3.png" ></a></li>
+				</ul>
+			</div>
+			<div id="header-list">
+			<ul>
+				<li id="li1">全部分类</li>
+				<li id="li2" class="li"><a href="index.html">首页</a></li>
+				<li id="li3" class="li"><a href="product.html">今日新单</a></li>
+				<li id="li4" class="li"><a href="product.html">美食</a></li>
+				<li id="li5" class="li"><a href="product.html">身边外卖</a></li>
+			</ul>
+			</div>
+		</div>
+     </div>
+	</div>
+	<div class="main">
+	  <nav>
+		 <div class="content">
+    <!-- 1.美食-酒店-客栈 -->
+   <!-- 		   <ul id="choise-list"> -->
+   <!-- 			   <li></li> -->
+   <!-- 			 </ul> -->
+	    <aside id="nav-aside" style="display:block">
+		<ul id="navAside">
+			<li data-toggle="nav-1">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">美食</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">自助餐</a>
+					<a href="#" class="nav-sa">代金券</a>
+				</span>
+				<i class="right1"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-2">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">酒店</a>
+					<span>/</span>
+					<a href="#" class="nav-ba">客栈</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">经济型酒店</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-3">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">猫眼电影</a>
+					<span>/</span>
+					<a href="#" class="nav-ba">在线选座</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-4">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">KTV</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-5">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">休闲娱乐</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">足疗按摩</a>
+					<a href="#" class="nav-sa">温泉</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-6">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">周边游</a>
+					<span>/</span>
+					<a href="#" class="nav-ba">旅游</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-7">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">机票</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">国内机票</a>
+					<a href="#" class="nav-sa">国际机票</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-8">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">生活服务</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">婚纱摄影</a>
+					<a href="#" class="nav-sa">个性写真</a>
+				</span>
+				<i class="right"></i>
+				<div class="line"></div>
+			</li>
+			<li data-toggle="nav-9">
+				<span class="nav-ba2">
+					<a href="#" class="nav-ba">生活服务</a>
+				</span>
+				<span class="nav-sa2">
+					<a href="#" class="nav-sa">美发</a>
+					<a href="#" class="nav-sa">美甲美睫</a>
+				</span>
+				<i class="right"></i>
+			</li>
+		</ul>
+		<div id="show-nav">
+			<div data-toggle="nav-1" class="nav-show">
+				<div>
+					<span><a href="#">美食</a></span>
+					<span></span>
+				</div>
+				<ul>
+					<li><a href="#">代金券</a></li>
+					<li><a href="#">甜点饮品</a></li>
+					<li><a href="#" class="hot">火锅</a></li>
+					<li><a href="#" class="hot">自助餐</a></li>
+					<li><a href="#">小吃快餐</a></li>
+					<li><a href="#">日韩料理</a></li>
+					<li><a href="#">西餐</a></li>
+					<li><a href="#">聚餐宴请</a></li>
+					<li><a href="#">烧烤烤肉</a></li>
+					<li><a href="#">东北菜</a></li>
+					<li><a href="#">川湘菜</a></li>
+					<li><a href="#">江浙菜</a></li>
+					<li><a href="#">香锅烤鱼</a></li>
+					<li><a href="#">粤港菜</a></li>
+					<li><a href="#">中式烧烤/烤串</a></li>
+					<li><a href="#">西北菜</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">咖啡酒吧茶馆</a></li>
+					<li><a href="#">京菜鲁菜</a></li>
+					<li><a href="#">云贵菜</a></li>
+					<li><a href="#">东南亚菜</a></li>
+					<li><a href="#">海鲜</a></li>
+					<li><a href="#">素食</a></li>
+					<li><a href="#">台湾/客家菜</a></li>
+					<li><a href="#">创意菜</a></li>
+					<li><a href="#">汤/粥/炖菜</a></li>
+					<li><a href="#">蒙餐</a></li>
+					<li><a href="#">新疆菜</a></li>
+					<li><a href="#">其他美食</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-2" class="nav-show">
+				<div>
+					<span><a href="#">酒店</a></span>
+					<span></span>
+				</div>
+				<ul>
+					<li><a href="#" class="hot">经济型酒店</a></li>
+					<li><a href="#">豪华酒店</a></li>
+					<li><a href="#">主题酒店</a></li>
+					<li><a href="#">度假酒店/度假村</a></li>
+					<li><a href="#">公寓型酒店</a></li>
+					<li><a href="#">客栈</a></li>
+					<li><a href="#">青年旅社</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-3" class="nav-show">
+				<div>
+					<span><a href="#">当前热映</a></span>
+					<span><a href="#">热门影院</a></span>
+				</div>
+				<ul>
+					<li><a href="#">敦刻尔克</a></li>
+					<li><a href="#">星际特工：千星之...</a></li>
+					<li><a href="#">银魂 真人版</a></li>
+					<li><a href="#">蜘蛛侠：英雄归来</a></li>
+					<li><a href="#">战狼2</a></li>
+					<li><a href="#">黑白迷宫</a></li>
+					<li><a href="#">猩球崛起3：终极...</a></li>
+					<li><a href="#">赛车总动员3：极...</a></li>
+					<li><a href="#">极盗车神</a></li>
+					<li><a href="#">杀破狼·贪狼</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">星美国际影城</a></li>
+					<li><a href="#">万达影城</a></li>
+					<li><a href="#">SFC上影影城</a></li>
+					<li><a href="#">金字塔国际影城</a></li>
+					<li><a href="#">UME国际影城</a></li>
+					<li><a href="#">百老汇影城</a></li>
+					<li><a href="#">卢米埃影城</a></li>
+					<li><a href="#">保利国际影城</a></li>
+					<li><a href="#">中影国际影城</a></li>
+					<li><a href="#">比高电影城</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-4" class="nav-show"></div>
+			<div data-toggle="nav-5" class="nav-show">
+				<div>
+					<span><a href="#">休闲娱乐</a></span>
+					<span><a href="#"></a></span>
+				</div>
+				<ul>
+					<li><a href="#" class="hot">KTV</a></li>
+					<li><a href="#">洗浴/汗蒸</a></li>
+					<li><a href="#">足疗按摩</a></li>
+					<li><a href="#">电玩/游戏厅</a></li>
+					<li><a href="#">运动健身</a></li>
+					<li><a href="#">私人影院</a></li>
+					<li><a href="#">酒吧</a></li>
+					<li><a href="#">密室逃脱</a></li>
+					<li><a href="#">网吧网咖</a></li>
+					<li><a href="#">茶馆</a></li>
+					<li><a href="#">棋牌室</a></li>
+					<li><a href="#">桌游</a></li>
+					<li><a href="#">轰趴馆</a></li>
+					<li><a href="#">采摘/农家乐</a></li>
+					<li><a href="#">DIY手工坊</a></li>
+					<li><a href="#">VR</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">演出赛事</a></li>
+					<li><a href="#">真人CS</a></li>
+					<li><a href="#">更多休闲娱乐</a></li>
+					<li><a href="#">温泉</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-6" class="nav-show">
+				<div>
+					<span><a href="#">周边游</a></span>
+					<span><a href="#"></a></span>
+				</div>
+				<ul>
+					<li><a href="#">温泉</a></li>
+					<li><a href="#">景点</a></li>
+					<li><a href="#">主题公园</a></li>
+					<li><a href="#">水上乐园</a></li>
+					<li><a href="#">动植物园</a></li>
+					<li><a href="#">海洋馆</a></li>
+					<li><a href="#">展览馆</a></li>
+					<li><a href="#">游船</a></li>
+					<li><a href="#">高空观景</a></li>
+					<li><a href="#">真人CS</a></li>
+					<li><a href="#">漂流</a></li>
+					<li><a href="#">单车出租</a></li>
+					<li><a href="#">其他游玩</a></li>
+					<li><a href="#">农家乐</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-7" class="nav-show"></div>
+			<div data-toggle="nav-8" class="nav-show">
+				<div>
+					<span><a href="#">生活服务</a></span>
+					<span><a href="#"></a></span>
+				</div>
+				<ul>
+					<li><a href="#">婚纱摄影</a></li>
+					<li><a href="#">个性写真</a></li>
+					<li><a href="#">亲子摄影</a></li>
+					<li><a href="#">其他摄影</a></li>
+					<li><a href="#">培训课程</a></li>
+					<li><a href="#">其他生活</a></li>
+					<li><a href="#">汽车服务</a></li>
+					<li><a href="#">体检/齿科</a></li>
+					<li><a href="#">衣物/皮具洗护</a></li>
+					<li><a href="#">鲜花</a></li>
+					<li><a href="#">母婴亲子</a></li>
+					<li><a href="#">配镜</a></li>
+					<li><a href="#">照片冲印</a></li>
+					<li><a href="#">商场购物卡</a></li>
+					<li><a href="#">服饰鞋包</a></li>
+				</ul>
+			</div>
+			<div data-toggle="nav-9" class="nav-show">
+				<div>
+					<span><a href="#">丽人</a></span>
+					<span><a href="#"></a></span>
+				</div>
+				<ul>
+					<li><a href="#">美发</a></li>
+					<li><a href="#">美容美体</a></li>
+					<li><a href="#">美甲美睫</a></li>
+					<li><a href="#">瑜伽舞蹈</a></li>
+					<li><a href="#">瘦身纤体</a></li>
+					<li><a href="#">韩式定妆</a></li>
+					<li><a href="#">祛痘</a></li>
+					<li><a href="#">纹身</a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+    <!-- 2.中间热门团购 滑动图片 -->
+		   <div id="hot_banner">
+   <!-- 			    (1)上半部分 -->
+          <div class="up_part">
+   <!-- 					      热门团购 -->
+					   <div class="content-title" id="hot-buy">
+						   <div class="label">
+							   <img src="images/fire.png" alt="">
+								<b>热门团购</b>
+               </div>								
+							  <div class="content_hot-groupbuy">
+								 <ul class="clear">
+								    <li><a href="#">代金券</a></li>
+								    <li><a href="#">自助餐</a></li>
+								    <li><a href="#">小吃快餐</a></li>
+								    <li><a href="#">火锅</a></li>
+								    <li><a href="#">甜点饮品</a></li>
+								    <li><a href="#">烧烤烤肉</a></li>
+								    <li><a href="#">江浙菜</a></li>
+								    <li><a href="#">江浙菜</a></li>
+								    <li><a href="#">海鲜</a></li>
+								    <li><a href="#">聚餐宴请</a></li>
+								 </ul>
+								</div>
+						 </div>
+    <!-- 					      全部区域 -->
+					   <div id="area" class="content-title">
+						   <div class="label">
+							   <img src="images/position.png" alt="">
+								<b>全部区域</b>
+               </div>								
+							  <div class="content_allblock hide">
+								 <a href="#">更多
+								 <b></b>
+								 </a>
+								 <ul class="clear showAll">
+								    <li><a href="#">西湖区</a></li>
+								    <li><a href="#">拱墅区</a></li>
+								    <li><a href="#">萧山区</a></li>
+								    <li><a href="#">江干区</a></li>
+								    <li><a href="#">滨江区</a></li>
+								    <li><a href="#">余杭区</a></li>
+								    <li><a href="#">上城区</a></li>
+								    <li><a href="#">临安市</a></li>
+								    <li><a href="#">富阳市</a></li>
+								    <li><a href="#">下城区</a></li>
+								    <li><a href="#">桐庐市</a></li>
+								    <li><a href="#">建德市</a></li>
+								    <li><a href="#">淳安市</a></li>
+								 </ul>
+								</div>
+						 </div>
+    <!-- 					     热门商圈 -->
+					   <div id="hotbiness" class="content-title">
+						   <div class="label">
+							 <img src="images/hotel.png" alt="">
+								<b>热门商圈</b>
+               </div>								
+							  <div class="content_hot-biness">
+								 <ul class="clear">
+								    <li><a href="#">临平</a></li>
+								    <li><a href="#">瓜沥镇</a></li>
+								    <li><a href="#">九堡</a></li>
+								    <li><a href="#">义蓬</a></li>
+								    <li><a href="#">恒隆广场</a></li>
+								    <li><a href="#">南市中心</a></li>
+								    <li><a href="#">塘栖</a></li>
+								    <li><a href="#">老余杭</a></li>
+								    <li><a href="#">开发区/高教园</a></li>
+								 </ul>
+								</div>
+						 </div>
+					</div>
+    <!--          (2)下半部分 -->
+          <div class="banner">
+			  <div class="sliderImg" style="left: -720px;">
+				  <a href="product.html"><img src="images/take_out.jpg"></a>
+				  <a href="hotel.html"><img src="images/hotel.jpg"></a>
+				  <a href="food.html"><img src="images/delicious_food.jpg"></a>
+				  <a href="travel.html"><img src="images/movie.jpg"></a>
+				  <a href="product.html"><img src="images/take_out.jpg"></a>
+
+			  </div>
+			  <div id="sliderIndex">
+				  <span index="1" class="on"></span>
+				  <span index="2"></span>
+				  <span index="3"></span>
+				  <span index="4"></span>
+			  </div>
+			  <div class="prev arrow">&lt;</div>
+			  <div class="next arrow">&gt;</div>
+		  </div>
+					
+                 
+			 </div>
+    <!-- 3.右边二维码 每日更新 -->
+		   <div id="er_new">
+    <!-- 			    (1)二维码 -->
+          <div class="qrcode-img">
+					   <img src="images/qrcode.png" alt="">
+					</div>
+    <!--          (2)每日更新 -->
+          <div class="everyday_new">
+					   <h1>每日上新</h1>
+						 <div class="title_deputy">吃喝玩乐最低价！</div>
+						 <a href="#">
+						 <img src="images/everyday_new.png" alt="">
+						 </a>
+					</div>
+			 </div>
+	   </div>
+		</nav>
+				<!-- 		楼层     -->
+		<!--floor  f1美食-->
+    <div class="floor" id="f1">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_01.gif" >
+                <a href="#">美食</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">美食</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">代金券</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">自助餐</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">火锅</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">烧烤烤肉</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">香锅烤鱼</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">西餐</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部 </a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            <!-- <div class="product" >
+                <a href="#">
+                <img src="img/floor.f1.1.jpg" alt="">
+                </a>
+                <div class="desc clear" >
+                    <p class="name"><a href="#">【旺角城/银隆百货】滏山汇烤肉自助餐厅</a></p>
+                    <p class="subName"><a href="#">100元代金券100元代金券100元代金券</a></p>
+                    <div class="sale" >
+                        <p class="price1">
+                            ¥88.00
+                        </p>
+                        <p class="price2">门店价&nbsp;¥<span>128.00</span></p>
+                        <p class="sold">已售1000</p>
+                    </div>
+                </div>
+           								<div class="assess">
+           										<span>123人评价</span>
+           										<img src="img/f_00.png" />
+           								</div>
+													
+            </div>  -->
+        </div>
+				<div class="floor-bottom"><a href="#">更多美食团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f2">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_02.gif" >
+                <a href="#">休闲娱乐</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">休闲娱乐</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">运动健身</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">足疗按摩</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部 </a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多休闲娱乐团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f3">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_03.gif" >
+                <a href="#">酒店</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">酒店</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">经济型酒店</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">主题酒店</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">豪华酒店</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#"> 全部</a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多酒店团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f4">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_04.gif" >
+                <a href="#">生活服务</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">生活服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">培训课程</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">母婴亲子</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">配镜</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">体验齿科</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">汽车服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部</a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多酒店团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f1">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_01.gif" >
+                <a href="#">丽人</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">生活服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">培训课程</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">母婴亲子</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">配镜</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">体验齿科</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">汽车服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部</a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多酒店团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f1">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_01.gif" >
+                <a href="#">旅游</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">生活服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">培训课程</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">母婴亲子</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">配镜</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">体验齿科</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">汽车服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部</a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多酒店团购，请点击查看></a></div>
+    </div>
+		<div class="floor" id="f4">
+        <div id="floor-top" class="clear">
+            <div class="left">
+                <img src="img/f_04.gif" >
+                <a href="#">猫眼电影</a>
+            </div>
+            <ul class="right">
+                <li><a href="#">生活服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">培训课程</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">母婴亲子</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">配镜</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">体验齿科</a>
+                    <b>|</b>
+                </li>
+								<li><a href="#">汽车服务</a>
+                    <b>|</b>
+                </li>
+                <li><a href="#">全部</a>
+                    <b>></b>
+                </li>
+            </ul>
+        </div>
+        <div class="floor-content">
+            
+        </div>
+				<div class="floor-bottom"><a href="#">更多酒店团购，请点击查看></a></div>
+    </div>
+	</div>
+	<div id="lynfooter">
+		<ul class="s folder">
+			<li class="active">团购分类</li>
+			<li>热门地标</li>
+			<li>今日新单</li>
+			<li>周边城市</li>
+			<li>品牌推荐</li>
+			<li>专题推荐</li>
+			<li>品类推荐</li>
+			<li>友情链接</li>
+		</ul>
+		<ul class="details group_sort show">
+			<div class="recommend clear">
+				<li><a href="#">美食团购</a></li>
+				<li><a href="#">电影团购</a></li>
+				<li><a href="#">休闲娱乐团购</a></li>
+				<li><a href="#">旅游团购</a></li>
+				<li><a href="#">生活服务团购</a></li>
+				<li><a href="#">购物团购</a></li>
+				<li><a href="#">丽人团购</a></li>
+				<li><a href="#">团购评论</a></li>
+				<li><a href="#">品牌团购</a></li>
+				<li><a href="#">专题团购</a></li>
+				<li><a href="#">美团团购</a></li>
+			</div>
+		</ul>
+
+		<ul class="details hotLandmark">
+			<div class="recommend clear">
+				<li><a href="#">下沙团购</a></li>
+				<li><a href="#">钱塘新城团购</a></li>
+				<li><a href="#">武林广场团购</a></li>
+				<li><a href="#">湖滨/解白商...</a></li>
+				<li><a href="#">彩虹城团购</a></li>
+				<li><a href="#">湖古墩路沿线团购</a></li>
+				<li><a href="#">凤起路沿线团购</a></li>
+				<li><a href="#">开发区/高教...</a></li>
+				<li><a href="#">星光大道团购</a></li>
+				<li><a href="#">朝晖地区团购</a></li>
+				<li><a href="#">城厢团购</a></li>
+
+
+				<li><a href="#">湖滨团购</a></li>
+				<li><a href="#">加州阳光团购</a></li>
+				<li><a href="#">庆春路沿线团购</a></li>
+				<li><a href="#">高新文教区团购</a></li>
+				<li><a href="#">新塘路/秋涛...</a></li>
+				<li><a href="#">城东团购</a></li>
+				<li><a href="#">文二路沿线团购</a></li>
+				<li><a href="#">延安路沿线团购</a></li>
+				<li><a href="#">龙井团购</a></li>
+				<li><a href="#">北干团购</a></li>
+				<li><a href="#">西湖北线/黄...</a></li>
+
+
+				<li><a href="#">莫干山路团购</a></li>
+				<li><a href="#">大关团购</a></li>
+				<li><a href="#">恒隆广场团购</a></li>
+				<li><a href="#">湘湖团购</a></li>
+				<li><a href="#">西湖南山路...</a></li>
+			</div>
+		</ul>
+
+
+		<ul class="details todayOdd">
+			<div class="recommend clear">
+				<li><a href="#">杭州丽正门...</a></li>
+				<li><a href="#">杭州径山漫香...</a></li>
+				<li><a href="#">桐庐海汇名都...</a></li>
+				<li><a href="#">千岛丽景酒...</a></li>
+				<li><a href="#">千岛丽景酒...</a></li>
+				<li><a href="#">杭州径山漫香...</a></li>
+				<li><a href="#">开元曼居·千...</a></li>
+				<li><a href="#">千岛湖绿城·...</a></li>
+				<li><a href="#">36都主题酒店...</a></li>
+				<li><a href="#">汉州径山漫香...</a></li>
+				<li><a href="#">开元曼居·千...</a></li>
+
+
+				<li><a href="#">千岛湖滨江希...</a></li>
+				<li><a href="#">千岛湖绿城·...</a></li>
+				<li><a href="#">千岛湖绿城·...</a></li>
+				<li><a href="#">杭州五洋宾馆...</a></li>
+			</div>
+		</ul>
+
+		<ul class="details surroundingCities">
+			<div class="recommend clear">
+				<li><a href="#">宁波团购</a></li>
+				<li><a href="#">无锡团购</a></li>
+				<li><a href="#">南京团购</a></li>
+				<li><a href="#">合肥团购</a></li>
+				<li><a href="#">武汉团购</a></li>
+				<li><a href="#">成都团购</a></li>
+				<li><a href="#">青岛团购</a></li>
+				<li><a href="#">厦门团购</a></li>
+				<li><a href="#">大连团购</a></li>
+				<li><a href="#">沈阳团购</a></li>
+				<li><a href="#">长沙团购</a></li>
+
+
+				<li><a href="#">郑州团购</a></li>
+				<li><a href="#">石家庄团购</a></li>
+				<li><a href="#">苏州团购</a></li>
+				<li><a href="#">淄博团购</a></li>
+				<li><a href="#">南通团购</a></li>
+				<li><a href="#">南昌团购</a></li>
+				<li><a href="#">保定团购</a></li>
+				<li><a href="#">蚌埠团购</a></li>
+				<li><a href="#">常州团购</a></li>
+				<li><a href="#">大庆团购</a></li>
+				<li><a href="#">东莞团购</a></li>
+
+
+				<li><a href="#">佛山团购</a></li>
+				<li><a href="#">桂林团购</a></li>
+				<li><a href="#">海口团购</a></li>
+				<li><a href="#">葫芦岛团购</a></li>
+			</div>
+		</ul>
+
+		<ul class="details brandRecommended">
+			<div class="recommend clear">
+				<li><a href="#">ONEMORE</a></li>
+				<li><a href="#">益家优点</a></li>
+				<li><a href="#">胡氏大盘鸡</a></li>
+				<li><a href="#">德庄</a></li>
+				<li><a href="#">GOSSELINcak...</a></li>
+				<li><a href="#">真味料自助无...</a></li>
+				<li><a href="#">诸葛烤鱼</a></li>
+				<li><a href="#">九月烘焙工坊</a></li>
+				<li><a href="#">东京四谷姜太公</a></li>
+				<li><a href="#">吉尼咖啡</a></li>
+				<li><a href="#">欧衣茜可丽饼</a></li>
+
+
+				<li><a href="#">狗不理</a></li>
+				<li><a href="#">维尔德克</a></li>
+				<li><a href="#">华庭自助百汇</a></li>
+				<li><a href="#">景程大酒店</a></li>
+				<li><a href="#">面包物语</a></li>
+				<li><a href="#">好彩酒店</a></li>
+				<li><a href="#">笨牛牛排</a></li>
+				<li><a href="#">红舵码头</a></li>
+				<li><a href="#">百草堂</a></li>
+				<li><a href="#">凤台坊金鼎大...</a></li>
+				<li><a href="#">老北京绿豆饼</a></li>
+
+
+				<li><a href="#">酷巴客盐城旗...</a></li>
+				<li><a href="#">新寺洞韩国烤肉</a></li>
+				<li><a href="#">500CC</a></li>
+				<li><a href="#">欧凯特牛肉火锅</a></li>
+				<li><a href="#">纯棉立领T恤</a></li>
+				<li><a href="#">宴和春酒楼</a></li>
+				<li><a href="#">聚晨摄影工作室</a></li>
+				<li><a href="#">锦江之星连锁...</a></li>
+				<li><a href="#">金苹果蛋糕</a></li>
+				<li><a href="#">西典咖啡</a></li>
+				<li><a href="#">善客养生会所</a></li>
+
+
+				<li><a href="#">凯悦咖啡</a></li>
+				<li><a href="#">甜甜向上</a></li>
+				<li><a href="#">大排档</a></li>
+			</div>
+		</ul>
+
+		<ul class="details subjectRecommended">
+			<div class="recommend clear">
+				<li><a href="#">桂林景点门票</a></li>
+				<li><a href="#">无忧团购导航网</a></li>
+				<li><a href="#">美心团购</a></li>
+				<li><a href="#">实惠团购</a></li>
+				<li><a href="#">胶州团购网站</a></li>
+				<li><a href="#">乐山电影票...</a></li>
+				<li><a href="#">凯德广场美食...</a></li>
+				<li><a href="#">石家庄火锅团购</a></li>
+				<li><a href="#">横店门票团购</a></li>
+				<li><a href="#">宿州酒店团购</a></li>
+				<li><a href="#">广州水疗馆团购</a></li>
+
+
+				<li><a href="#">纯棉四件套</a></li>
+				<li><a href="#">最大团购网</a></li>
+				<li><a href="#">丝域养发馆团购</a></li>
+				<li><a href="#">蛋糕团购 广州</a></li>
+				<li><a href="#">古摄影 团购</a></li>
+				<li><a href="#">杭州绿茶</a></li>
+				<li><a href="#">云南菜团购</a></li>
+				<li><a href="#">宁波美食团购网</a></li>
+				<li><a href="#">西安钟点房团购</a></li>
+				<li><a href="#">三上团购</a></li>
+				<li><a href="#">美甲团购网</a></li>
+
+
+				<li><a href="#">红蜡烛</a></li>
+				<li><a href="#">电影票团购网</a></li>
+				<li><a href="#">厦门小鱿鱼</a></li>
+				<li><a href="#">太平洋团购网</a></li>
+				<li><a href="#">大千团购网</a></li>
+				<li><a href="#">途观团购</a></li>
+				<li><a href="#">佛跳墙团购</a></li>
+				<li><a href="#">美年大健康体...</a></li>
+				<li><a href="#">阳坊涮肉团购</a></li>
+				<li><a href="#">香港美食团购...</a></li>
+				<li><a href="#">儿童游泳团购</a></li>
+
+
+				<li><a href="#">美味故事团购</a></li>
+				<li><a href="#">杨家坪团购</a></li>
+				<li><a href="#">金佛山门票团购</a></li>
+			</div>
+		</ul>
+
+		<ul class="details categoryRecommended">
+			<div class="recommend clear">
+				<li><a href="#">宁波云贵菜</a></li>
+				<li><a href="#">宁波儿童乐园</a></li>
+				<li><a href="#">宁波咖啡/酒吧</a></li>
+				<li><a href="#">宁波全部</a></li>
+				<li><a href="#">宁波洗浴/汗蒸</a></li>
+				<li><a href="#">宁波密室逃脱</a></li>
+				<li><a href="#">宁波海鲜</a></li>
+				<li><a href="#">宁波培训课程</a></li>
+				<li><a href="#">宁波温泉</a></li>
+				<li><a href="#">宁波江浙菜</a></li>
+				<li><a href="#">宁波体检保健</a></li>
+
+
+				<li><a href="#">宁波汤/粥/炖菜</a></li>
+				<li><a href="#">宁波演出/赛...</a></li>
+				<li><a href="#">宁波家纺</a></li>
+				<li><a href="#">宁波清真菜</a></li>
+				<li><a href="#">宁波东北菜</a></li>
+				<li><a href="#">宁波商场购物车</a></li>
+				<li><a href="#">宁波游泳/水...</a></li>
+				<li><a href="#">宁波经济型酒店</a></li>
+				<li><a href="#">宁波照片冲印</a></li>
+				<li><a href="#">宁波桌游/电玩</a></li>
+				<li><a href="#">宁波汤配镜</a></li>
+
+
+				<li><a href="#">宁波西北菜</a></li>
+				<li><a href="#">宁波摄影写真</a></li>
+				<li><a href="#">宁波韩国料理</a></li>
+				<li><a href="#">宁波私人影院</a></li>
+				<li><a href="#">宁波本地购物</a></li>
+				<li><a href="#">宁波电器/数码</a></li>
+				<li><a href="#">宁波本地/周</a></li>
+				<li><a href="#">宁波母婴亲子</a></li>
+				<li><a href="#">宁波素食</a></li>
+				<li><a href="#">宁波咖啡酒吧</a></li>
+				<li><a href="#">宁波烧烤烤肉</a></li>
+
+
+				<li><a href="#">宁波石锅烤鱼</a></li>
+				<li><a href="#">宁波豪华酒店</a></li>
+				<li><a href="#">宁波个护化妆</a></li>
+			</div>
+		</ul>
+
+
+		<ul class="details friendlyLink">
+			<div class="recommend clear">
+				<li><a href="#">大众点评网</a></li>
+				<li><a href="#">大众点评下载</a></li>
+				<li><a href="#">亲子</a></li>
+				<li><a href="#">家装</a></li>
+				<li><a href="#">结婚</a></li>
+				<li><a href="#">教育</a></li>
+				<li><a href="#">宴会</a></li>
+				<li><a href="#">餐饮加盟</a></li>
+			</div>
+		</ul>
+	</div>
+	</div>
+	<div id="footer-nav">
+		<p></p>
+		<div class="ft-item ft-left">
+			<div>
+				<h3>获取更新</h3>
+				<ul>
+					<li>
+						<a href="#">iPhone/Android</a>
+					</li>
+					<li>
+						<a href="#">美团QQ空间</a>
+					</li>
+					<li>
+						<a href="#">美团新浪微博</a>
+					</li>
+					<li>
+						<a href="#">sitemap</a>
+					</li>
+					<li>
+						<a href="#">RSS订阅</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>商务合作</h3>
+				<ul>
+					<li>
+						<a href="#">商家合作</a>
+					</li>
+					<li>
+						<a href="#">美团商家营销平台</a>
+					</li>
+					<li>
+						<a href="#">到店餐饮代理商招募</a>
+					</li>
+					<li>
+						<a href="#">市场合作</a>
+					</li>
+					<li>
+						<a href="#">美团联盟</a>
+					</li>
+					<li>
+						<a href="#">美团云</a>
+					</li>
+					<li>
+						<a href="#">廉政邮箱</a>
+					</li>
+					<li>
+						<a href="#">聚宝盆餐饮开发平台</a>
+					</li>
+					<li>
+						<a href="#">美团点评智能收银机</a>
+					</li>
+					<li>
+						<a href="#">点餐秒付合作申请</a>
+					</li>
+					<li>
+						<a href="#">美团智能支付</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>公司信息</h3>
+				<ul>
+					<li>
+						<a href="#">关于美团</a>
+					</li>
+					<li>
+						<a href="#">美团承诺</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="#">加入我们</a>
+					</li>
+					<li>
+						<a href="#">法律声明</a>
+					</li>
+					<li>
+						<a href="#">用户协议</a>
+					</li>
+					<li>
+						<a href="#">隐私政策</a>
+					</li>
+					<li>
+						<a href="#">商户服务协议</a>
+					</li>
+					<li>
+						<a href="#">美团点评餐饮安全管理办法</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>用户帮助</h3>
+				<ul>
+					<li>
+						<a href="help.html">申请退款</a>
+					</li>
+					<li>
+						<a href="help.html">查看美团券密码</a>
+					</li>
+					<li>
+						<a href="help.html">常见问题</a>
+					</li>
+					<li>
+						<a href="help.html">开放API</a>
+					</li>
+					<li>
+						<a href="help.html">反诈骗公告</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ft-item ft-right">
+			<i></i>
+			<p>客服电话</p>
+			<p class="contact-msg">
+				<span class="contact-number">10107888</span>
+				<span>(9:00-23:00)</span>
+			</p>
+			<p>退款、退换货、查看美团券</p>
+			<p><a href="help.html">参考教程、轻松搞定！</a></p>
+		</div>
+	</div>
+	<!-- 页尾实现 -->
+	<div id="footer-copy">
+		<p>
+			&copy;2017美团网团购<a href="#">meituan.com</a>京ICP证070791号|京ICP备10211739号|电子公告服务规则
+		</p>
+		<p>广播电视节目制作经营许可证(京)字第03889号</p>
+		<p class="footer-p1">
+			<img src="file/-f=fewww--www-img-wangan.png@3841c15.png" alt="">
+			<span>京公网安备11010502025545号</span>
+		</p>
+		<div class="footer-img1">
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-shandong.png@3841c15.png" alt=""></a>
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-zhejiang.png@3841c15.png" alt=""></a>
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-gongshang-chongqing.png@3841c15.png" alt=""></a>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+
+	<script src="js/myUI.js"></script>
+	<script src="js/nav-aside.js"></script>
+	<script src="js/floors.js"></script>  
+	 <script src="js/header.js"></script>
+	<script src="js/nav-middleup.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/slider.js"></script>
+ </body>
+</html>

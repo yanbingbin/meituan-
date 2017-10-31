@@ -1,0 +1,108 @@
+/**dropdown下拉列表**/
+.dropdown a{
+	text-decoration:none; 
+	color:#000;
+	display:inline-block;
+	position:relative;
+}
+.dropdown:hover{
+	background: #fff;	
+}
+.dropdown a:hover{
+	color: #2bb8aa;
+}
+.dropdown>.dropdown-menu{
+	list-style:none; margin:0; padding:0;
+	border:1px solid #aaa;
+	background: #fff;
+}
+.dropdown-menu>.item:hover{background:#2BB8AA;}
+.dropdown-menu>.item a:hover{color:#000;}
+.dropdown-menu.fade{
+    height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s linear;
+}
+.dropdown-menu.in{opacity:1;border-top:none;z-index:10;position:absolute;}
+
+
+/**accordion手风琴**/
+.accordion{width:80%; margin:0 auto;}
+.accordion>.title{
+	background:#eee; border:1px soild #aaa;
+	padding:6px; font-size:1.5em; 
+	font-weight:bold; cursor:pointer;
+	border-radius:5px;
+}
+.accordion>.content{
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+}
+.accordion>:last-child{border-bottom:1px solid #eee;}
+.accordion>.content.fade{
+	height:0;
+	opacity:0;
+	overflow:hidden;
+	transition:all .5s linear;
+}
+.accordion>.content.in{height:84px;opacity:1;}
+
+
+/**tabs**/
+.tabs{ list-style:none; padding:0;}
+.tabs a{
+	text-decoration:none;
+	color:#000;
+	padding:6px 12px;
+	display:inline-block;
+	width:96px;
+	text-align:center;
+}
+.tabs>li{
+	float:left;
+	border-bottom:1px solid #000;
+}
+.tabs>.active{
+	border:1px solid #000;
+	border-bottom:0;
+}
+.container{position: relative;}
+.container>div{
+	width: 300px;
+	height: 100px;
+	padding:30px;
+	background:#fff;
+	border:1px solid #000;
+	border-top:0;
+	position: absolute;
+	top: 34px;
+	left: 0;
+}
+.container>.active{z-index:10;}
+
+/**倒三角i**/
+i{
+	height: 0;
+	width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: 3px dashed transparent;  
+	font-style: italic;
+	border-top: 3px solid #999;
+	-webkit-transition: -webkit-transform .3s linear;
+	position:relative;
+	top:-3px;
+}
+.nabla:hover i{
+	height: 0;
+	width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: 3px dashed transparent;  
+	font-style: italic;
+	border-bottom: 3px solid #2BB8AA;
+	-webkit-transition: -webkit-transform .3s linear;
+	position:relative;
+	top:-6px;
+}

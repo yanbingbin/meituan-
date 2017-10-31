@@ -1,0 +1,188 @@
+.main{width: 1170px;margin:0 auto;box-sizing:border-box;}
+/*body{background: #f9f9f9;}*/
+a{color: #666;}
+a:hover{color: #2bb8aa;}
+img{vertical-align:middle;}
+/*topmsg-left*/
+#topmsg{width: 1170px;height: 28px;border-bottom:1px solid #ccc;background: #f9f9f9;margin:0 auto;}
+#topmsg-left{width: 350px;height: 28px;margin-left: 20px;float:left;}
+#topmsg-left li{float: left;text-align: center;line-height:28px;margin-left:10px;font-size:14px;padding:0 5px;}
+#topmsg-left li img{margin-top:-2px;}
+a.loginColor{color: #f60;}
+a.loginColor:hover{color: #2bb8aa;text-decoration: underline;}
+
+/*topmsg-right*/
+#topmsg-right{width: 570px;height: 28px;margin-right: 20px;float:right;}
+#topmsg-right li.nabla{width:81px;float: left;text-align: center;line-height:28px;font-size:14px;}
+#topmsg-right li ul li.item{height: 28px;}
+#topmsg-right li.history ul.dropdown-menu{width:180px;line-height: 50px;text-align: center;}
+#topmsg-right li.merchant ul.dropdown-menu{width:150px;}
+#topmsg-right li.isSale ul.dropdown-menu{width:120px;}
+#topmsg-right li.recruit ul.dropdown-menu{width:160px;}
+#topmsg-right li.more ul.dropdown-menu{width:80px;}
+#topmsg-right li.account ul.dropdown-menu{width:100px;}
+
+/*头部*/
+#header-top{min-height:100px;padding-top:15px;width:1170px;margin:0 auto;}
+#logo{float:left;margin-left:35px;}
+#weizi{float:left;margin-left:5px;}
+#weizi>a{
+	border:1px solid #eee;
+	text-decoration:none;
+	color:#666;
+}
+#weizi>a:hover{color:#2bb8aa;}
+#weizi>h2{margin-top:15px;font-size:15px;}
+#top-input{
+	width:450px;
+	float:left;
+	box-sizing:border-box;
+	padding:0;
+	margin-top:10px;
+	position:absolute;
+	left:450px;
+}
+#check{
+height:42px;
+width:454px;
+box-sizing:border-box;
+border:2px solid #2BB8AA;
+border-right:0;
+}
+#check>ul{
+	float:left;
+	width:50px;
+	display:inline-block;
+	z-index:9;
+}
+#check>ul>#check-box1{
+    height: 38px;
+    width: 49px;
+    line-height:40px;
+    text-align:center;
+    border-right:1px solid #ddd;
+}
+#check>ul>#check-box1:hover{background-color:#f9f9f9;}
+#check>ul>li:nth-child(2){
+    height: 38px;
+    width: 49px;
+    line-height:40px;
+    text-align:center;
+    border:1px solid #ddd;
+	position:absolute;
+	opacity:0;
+	background:rgba(255,255,255,1);
+    -webkit-transition: -webkit-transform .3s linear;
+	}
+#check>ul>li:nth-child(2):hover{background-color:#f9f9f9;}
+#check>ul>#check-box1>.click{
+    height: 0;
+	width: 0;
+	line-height: 0;
+	font-size: 0;
+	border: 3px dashed transparent;  
+	font-style: italic;
+	border-top: 3px solid #999;
+    position:fixed;
+    top:45px;
+	-webkit-transition: -webkit-transform .3s linear;
+}
+#check>ul:hover{cursor:pointer;}
+#search,#sousuo{float:left;}
+#search{
+	height:38px;
+	width:340px;
+	line-height:40px;
+	border-top:0;
+	border-bottom:0;
+	border-left:none;
+	border-right:none;
+	outline:0;
+	padding-left:5px;
+}
+#sousuo{
+	width:57px;
+	height:41px;
+	line-height:40px;
+	background-color: #2BB8AA;
+	border:0;
+	color:#fff;
+	cursor:pointer;
+	outline:0;
+	top:-0.5px;
+	position: absolute;
+}
+#sousuo:hover{background-color:#00c3b0;}
+#check-list{
+	position:absolute;
+	z-index:1;
+	height:40px;
+}
+#check-list>li{
+	z-index:1;
+	margin-top:5px;
+	display:inline-block;
+	list-style:none;
+	margin-right:5px;
+}
+
+#check-list>li>a{text-decoration:none;color:#666;}
+#check-list>li>a:hover{color:#2bb8aa;text-decoration:underline;}
+#header-right{
+	margin-top:15px;
+	height:45px;
+	box-sizing:border-box;
+	float:right;
+}
+#header-right li{
+	display:inline-block;
+	list-style:none;
+	margin-left:20px;
+}
+#header-list{
+	width:1170px;margin:0 auto;
+	height:40px;
+	box-sizing:border-box;
+	margin-top:100px;
+	background-color: #2BB8AA;
+	padding:0;
+}
+#header-list>ul{
+	display:inline-block;
+	box-sizing:border-box;
+	padding: 0;
+	margin:0;
+	height:40px;
+}
+#header-list>ul>li{
+	display:inline-block;
+	list-style:none;
+}
+#header-list>ul>#li1{
+	width:220px;
+	height:40px;
+	background-color:#1DB6A1;
+	line-height:40px;
+	padding-left:10px;
+	color: #fff;
+}
+#header-list>ul>.li{
+	height:40px;
+	width:60px;
+	margin:0 15px;
+	box-sizing:border-box;
+	line-height:40px;
+	text-align:center;
+	font-size:14px;
+}
+#header-list>ul>.li:hover{background-color: #00c3b0;}
+#header-list>ul>.li>a{
+	color: #fff;
+	text-decoration:none;
+	font-weight:bold;
+}
+#header-list>ul>.li>a:hover{
+	color: #fff;
+	text-decoration:none;
+	font-weight:bold;
+}

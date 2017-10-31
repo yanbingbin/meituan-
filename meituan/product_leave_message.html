@@ -1,0 +1,433 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/myUI.css">
+	<link rel="stylesheet" href="css/nav-aside.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<div class="main">
+		<!--顶部信息-->
+		<div id="topmsg">
+			<ul id="topmsg-left">
+				<li><img src="images/star1.png" alt="">&nbsp;收藏美团</li>
+				<li id="loginSession"><a href="login.html" class="loginColor">登录</a>&nbsp;&nbsp;
+					<a href="register.html">注册</a>&nbsp;&nbsp;|
+				</li>
+			</ul>
+			<ul id="topmsg-right">
+				<li class="nabla"><a href="javascript:;">我的订单</a></li>
+				<li class="nabla dropdown account">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我的美团&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="order.html">我的订单</a></li>
+						<li class="item"><a href="order.html">我的评价</a></li>
+						<li class="item"><a href="order.html">我的收藏</a></li>
+						<li class="item"><a href="order.html">抵用券</a></li>
+						<li class="item"><a href="order.html">我的余额</a></li>
+						<li class="item"><a href="order.html">账户设置</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown history">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">最近浏览&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="empty">暂无浏览记录</li>
+					</ul>
+				</li>
+				<li class="nabla dropdown isSale">
+					<a class="dropdown-btn" data-trigger="dropdown" href="help.html">联系客服&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="help.html">申请退款</a></li>
+						<li class="item"><a href="help.html">申请退换货</a></li>
+						<li class="item"><a href="help.html">查看美团券</a></li>
+						<li class="item"><a href="help.html">换绑手机</a></li>
+						<li class="item"><a href="help.html">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown merchant">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我是商家&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="merchantCenter.html">商家合作中心</a></li>
+						<li class="item"><a href="merchantCenter.html">我想合作</a></li>
+						<li class="item"><a href="merchantCenter.html">手机免费开店</a></li>
+						<li class="item"><a href="merchantCenter.html">商家营销平台</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown recruit">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">代理商招募&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="agency.html">餐饮代理商招募</a></li>
+						<li class="item"><a href="agency.html">非餐饮代理商招募</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown more">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">更多&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="javascript:;">手机版</a></li>
+						<li class="item"><a href="javascript:;">邀请好友</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--头部-->
+		<div id="header-top" class="clear">
+			<a href="index.html" id='logo'>
+				<img src="images/logo.png" />
+			</a>
+			<div id="weizi">
+				<h2>杭州</h2>
+				<a href="#">切换城市</a>
+			</div>
+			<div id="top-input" class="clear">
+				<form action="">
+					<div id="check">
+						<ul id="check-boxes">
+							<li class="check-box nabla" id="check-box1"><span>团购</span><i></i></li>
+							<li class="check-box" id="check-box2"><span>商家</span></li>
+						</ul>
+					<input type="text" class="search" id="search" placeholder="请输入商品名称,地址等">
+					<input type="submit" value="搜索" id="sousuo">
+					</div>
+					<ul id="check-list">
+						<li><a href="javascript:;">火锅</a></li>
+						<li><a href="javascript:;">锅内锅外</a></li>
+						<li><a href="javascript:;">自助</a></li>
+						<li><a href="javascript:;">蛋糕</a></li>
+						<li><a href="javascript:;">哈根达斯</a></li>
+						<li><a href="javascript:;">巴菲盛宴</a></li>
+						<li><a href="javascript:;">烤肉</a></li>
+						<li><a href="javascript:;">知味观</a></li>
+						<li><a href="javascript:;">肯德基</a></li>
+					</ul>
+				</form>
+			</div>
+			<div id="header-right">
+				<ul>
+					<li><a href="help.html"><img src="images/1.png" ></a></li>
+					<li><a href="help.html"><img src="images/2.png" ></a></li>
+					<li><a href="help.html"><img src="images/3.png" ></a></li>
+				</ul>
+			</div>
+			<div id="header-list">
+			<ul>
+				<li id="li1">全部分类</li>
+				<li id="li2" class="li"><a href="index.html">首页</a></li>
+				<li id="li3" class="li"><a href="javascript:;">今日新单</a></li>
+				<li id="li4" class="li"><a href="product.html">美食</a></li>
+				<li id="li5" class="li"><a href="javascript:;">身边外卖</a></li>
+			</ul>
+			</div>
+		</div>
+     </div>
+	</div>
+	
+    <div class="main">
+        <!--商品详情-->
+        <div id="product">
+            <ul class="nav-bar">
+                <li><a href="#">杭州团购 » </a>&nbsp;</li>
+                <li><a href="#">美食团购 » </a>&nbsp;</li>
+                <li><a href="#">自助餐 » </a>&nbsp;</li>
+                <li><a href="#">江干区 » </a>&nbsp;</li>
+                <li><a href="#">钱江新城 » </a>&nbsp;</li>
+                <li><a href="#">芭菲盛宴（国际时代广场店）</a>&nbsp;</li>
+            </ul>
+            <div id="merchant">
+                <div class="merchant-msg1">
+                    <h1>戈斯汀超级自助美食（国际时代广场店）</h1>
+                    <p>下沙街道富春路与市民街交叉口国际时代广场1号楼2楼（电信大厦旁）</p>
+                    <span class="merchant-score">5分</span>
+                    <span class="merchant-star"><img src="img/f_00.png" ></span>
+                    <a class="merchant-sort" href="#">自助餐</a>
+                    <img src="img/map.png" alt="">
+                    <img src="img/marker.png" alt="">
+                </div>
+                <div class="merchant-msg2">
+                    <div class="msg1">评论人数： <a href="#">21345</a></div>
+                    <div class="msg2">商家资质：<a href="#">查看食品安全档案</a></div>
+                </div>
+            </div>
+            <div id="group-buying">
+                <h2>正在团购</h2>
+                <ul class="group-msg">
+                    <li>
+                        <a class="item-title">
+                            <img src="img/group.jpg" alt="">
+                            <span>
+                                <span class="title">单人自助晚餐 </span>
+                                <span class="sale">已售 68500</span>
+                            </span>
+                        </a>
+                        <span>截止到2017.10.29</span>
+                        <span class="item-price">
+                            <span>¥ 178</span>
+                            <span>门店价 <s>¥ 198</s></span>
+                        </span>
+                        <a href="myOrderSubmit.html" class="buying-btn">立即抢购</a>
+                    </li>
+                    <li>
+                        <a class="item-title">
+                            <img src="img/group.jpg" alt="">
+                            <span>
+                                <span class="title">单人自助午餐 </span>
+                                <span class="sale">已售 23145</span>
+                            </span>
+                        </a>
+                        <span>截止到2017.10.29</span>
+                        <span class="item-price">
+                            <span>¥ 132</span>
+                            <span>门店价 <s>¥ 158</s></span>
+                        </span>
+                        <a href="myOrderSubmit.html" class="buying-btn">立即抢购</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="dish">
+                <h2>特色菜</h2>
+                <table class="dish-menu">
+                    <tr>
+                        <td>牛排</td>
+                        <td>哈根达斯</td>
+                        <td>三文鱼</td>
+                    </tr>
+                    <tr>
+                        <td>烤鱼</td>
+                        <td>冰激凌</td>
+                        <td>哈根达斯冰激凌</td>
+                    </tr>
+                    <tr>
+                        <td>虾</td>
+                        <td>鸡尾酒</td>
+                        <td>生蚝</td>
+                    </tr>
+                    <tr>
+                        <td>烤生蚝</td>
+                        <td>烤小黄鱼</td>
+                        <td>木瓜雪蛤</td>
+                    </tr>
+                    <tr>
+                        <td>虾</td>
+                        <td>烤生蚝</td>
+                        <td><a href="#">更多</a></td>
+                    </tr>
+                </table>
+                <ul class="dish-img">
+                    <li>
+                        <a href="#"><img src="img/dish1.jpg" alt=""></a>
+                        牛排
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/dish2.jpg" alt=""></a>
+                        哈根达斯
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/dish3.jpg" alt=""></a>
+                        三文鱼
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/dish4.jpg" alt=""></a>
+                        烤鱼
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/dish5.jpg" alt=""></a>
+                        冰激凌
+                    </li>
+                </ul>
+            </div>
+            <div id="near"></div>
+        </div>
+        <!--商品评论-->
+        <div class="product1">
+            <ul>
+                <li>全部</li>
+                <li>晒图评价</li>
+                <select name="product1" id="product1">
+                    <option value="1">默认排序</option>
+                    <option value="2">时间排序</option>
+                </select>
+            </ul>
+            <div class="product1-all">
+<!--                 <li> -->
+<!--                     <div class="left"> -->
+<!--                         <img src="img/643e5214b1acdeacdc0e3de5c878bac68783.jpg" alt=""> -->
+<!--                         <span>bo573960806</span> -->
+<!--                     </div> -->
+<!--                     <div class="right"> -->
+<!--                         <img src="img/f_00.png" alt=""><span>2017-03-14</span> -->
+<!--                         <p>听朋友说的味道不错，买了只百味鸡家人都说味道还可以，就是价格有些贵，优惠力度不大 </p> -->
+<!--                         <a href="javascript:;"><img src="img/1b2f162e8e1e3bdd2131421dc0e2e70048753.jpg" alt=""></a> -->
+<!--                         <a href="javascript:;"><img src="img/77e1c14edae2fc3f9c97d7b6803a413753698.jpg" alt=""></a> -->
+<!--                         <h6><a href="javascript:;">紫燕百味鸡代金券</a></h6> -->
+<!--                     </div> -->
+<!--                 </li> -->
+<!--</li>-->
+            </div>
+			<div class="page">
+<!-- 			 <ul> -->
+<!-- 			 	<li>1</li> -->
+<!-- 			 	<li>2</li> -->
+<!-- 			 	<li>3</li> -->
+<!-- 			 	<li>4</li> -->
+<!-- 			 </ul> -->
+			</div>
+        </div>
+    </div>
+		<div id="footer-nav">
+		<p></p>
+		<div class="ft-item ft-left">
+			<div>
+				<h3>获取更新</h3>
+				<ul>
+					<li>
+						<a href="#">iPhone/Android</a>
+					</li>
+					<li>
+						<a href="#">美团QQ空间</a>
+					</li>
+					<li>
+						<a href="#">美团新浪微博</a>
+					</li>
+					<li>
+						<a href="#">sitemap</a>
+					</li>
+					<li>
+						<a href="#">RSS订阅</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>商务合作</h3>
+				<ul>
+					<li>
+						<a href="#">商家合作</a>
+					</li>
+					<li>
+						<a href="#">美团商家营销平台</a>
+					</li>
+					<li>
+						<a href="#">到店餐饮代理商招募</a>
+					</li>
+					<li>
+						<a href="#">市场合作</a>
+					</li>
+					<li>
+						<a href="#">美团联盟</a>
+					</li>
+					<li>
+						<a href="#">美团云</a>
+					</li>
+					<li>
+						<a href="#">廉政邮箱</a>
+					</li>
+					<li>
+						<a href="#">聚宝盆餐饮开发平台</a>
+					</li>
+					<li>
+						<a href="#">美团点评智能收银机</a>
+					</li>
+					<li>
+						<a href="#">点餐秒付合作申请</a>
+					</li>
+					<li>
+						<a href="#">美团智能支付</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>公司信息</h3>
+				<ul>
+					<li>
+						<a href="#">关于美团</a>
+					</li>
+					<li>
+						<a href="#">美团承诺</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="#">加入我们</a>
+					</li>
+					<li>
+						<a href="#">法律声明</a>
+					</li>
+					<li>
+						<a href="#">用户协议</a>
+					</li>
+					<li>
+						<a href="#">隐私政策</a>
+					</li>
+					<li>
+						<a href="#">商户服务协议</a>
+					</li>
+					<li>
+						<a href="#">美团点评餐饮安全管理办法</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>用户帮助</h3>
+				<ul>
+					<li>
+						<a href="help.html">申请退款</a>
+					</li>
+					<li>
+						<a href="help.html">查看美团券密码</a>
+					</li>
+					<li>
+						<a href="help.html">常见问题</a>
+					</li>
+					<li>
+						<a href="help.html">开放API</a>
+					</li>
+					<li>
+						<a href="help.html">反诈骗公告</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ft-item ft-right">
+			<i></i>
+			<p>客服电话</p>
+			<p class="contact-msg">
+				<span class="contact-number">10107888</span>
+				<span>(9:00-23:00)</span>
+			</p>
+			<p>退款、退换货、查看美团券</p>
+			<p><a href="help.html">参考教程、轻松搞定！</a></p>
+		</div>
+	</div>
+	<!-- 页尾实现 -->
+	<div id="footer-copy">
+		<p>
+			&copy;2017美团网团购<a href="#">meituan.com</a>京ICP证070791号|京ICP备10211739号|电子公告服务规则
+		</p>
+		<p>广播电视节目制作经营许可证(京)字第03889号</p>
+		<p class="footer-p1">
+			<img src="file/-f=fewww--www-img-wangan.png@3841c15.png" alt="">
+			<span>京公网安备11010502025545号</span>
+		</p>
+		<div class="footer-img1">
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-shandong.png@3841c15.png" alt=""></a>
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-zhejiang.png@3841c15.png" alt=""></a>
+			<a href="http://www.bj315.org/xfwq/lstd/201209/t20120910_3344.shtml?dnrpluojqxbceiqq"><img src="file/-f=fewww-www-css-i-logo-gongshang-chongqing.png@3841c15.png" alt=""></a>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/product_list.js"></script>
+	<script src="js/help.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/nav-aside.js"></script>
+	<script src="js/myUI.js"></script>>
+</body>
+</html>

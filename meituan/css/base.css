@@ -1,0 +1,13 @@
+blockquote,body,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:400}
+li{list-style:none}
+caption,th{text-align:left}
+input,select,textarea{font-family:inherit;font-size:inherit;*font-size:100%;font-weight:inherit}
+html{background-color:#eee}
+body{font:400 14px/1.5 "Hiragino Sans GB","WenQuanYi Micro Hei",tahoma,sans-serif;color:#666;background-color:#fff}
+a{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-family:"Hiragino Sans GB"," Microsoft YaHei","WenQuanYi Micro Hei",arial,sans-serif;color:#333;-webkit-font-smoothing:antialiased}
+input[type=password]{font-family:arial,sans-serif}
+.clear:after {content:' ';display:block;visibility:hidden;overflow:hidden;clear:both;}

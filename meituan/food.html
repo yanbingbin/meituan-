@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自助餐</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/myUI.css">
+	<link rel="stylesheet" href="css/nav-aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<div id="topmsg">
+			<ul id="topmsg-left">
+				<li><img src="images/star1.png" alt="">&nbsp;收藏美团</li>
+				<li id="loginSession"><a href="login.html" class="loginColor">登录</a>&nbsp;&nbsp;
+					<a href="register.html">注册</a>&nbsp;&nbsp;|
+				</li>
+			</ul>
+			<ul id="topmsg-right">
+				<li class="nabla"><a href="javascript:;">我的订单</a></li>
+				<li class="nabla dropdown account">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我的美团&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="order.html">我的订单</a></li>
+						<li class="item"><a href="order.html">我的评价</a></li>
+						<li class="item"><a href="order.html">我的收藏</a></li>
+						<li class="item"><a href="order.html">抵用券</a></li>
+						<li class="item"><a href="order.html">我的余额</a></li>
+						<li class="item"><a href="order.html">账户设置</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown history">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">最近浏览&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="empty">暂无浏览记录</li>
+					</ul>
+				</li>
+				<li class="nabla dropdown isSale">
+					<a class="dropdown-btn" data-trigger="dropdown" href="help.html">联系客服&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="help.html">申请退款</a></li>
+						<li class="item"><a href="help.html">申请退换货</a></li>
+						<li class="item"><a href="help.html">查看美团券</a></li>
+						<li class="item"><a href="help.html">换绑手机</a></li>
+						<li class="item"><a href="help.html">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown merchant">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我是商家&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="merchantCenter.html">商家合作中心</a></li>
+                        <li class="item"><a href="merchantCenter.html">我想合作</a></li>
+                        <li class="item"><a href="merchantCenter.html">手机免费开店</a></li>
+                        <li class="item"><a href="merchantCenter.html">商家营销平台</a></li>
+                    </ul>
+                </li>
+                <li class="nabla dropdown recruit">
+                    <a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">代理商招募&nbsp;<i></i></a>
+                    <ul class="dropdown-menu fade">
+                        <li class="item"><a href="agency.html">餐饮代理商招募</a></li>
+                        <li class="item"><a href="agency.html">非餐饮代理商招募</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown more">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">更多&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="javascript:;">手机版</a></li>
+						<li class="item"><a href="javascript:;">邀请好友</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--头部-->
+		<div id="header-top" class="clear">
+			<a href="index.html" id='logo'>
+				<img src="images/logo.png" />
+			</a>
+			<div id="weizi">
+				<h2>杭州</h2>
+				<a href="#">切换城市</a>
+			</div>
+			<div id="top-input" class="clear">
+				<form action="">
+					<div id="check">
+						<ul id="check-boxes">
+							<li class="check-box nabla" id="check-box1"><span>团购</span><i></i></li>
+							<li class="check-box" id="check-box2"><span>商家</span></li>
+						</ul>
+					<input type="text" class="search" id="search" placeholder="请输入商品名称,地址等">
+					<input type="submit" value="搜索" id="sousuo">
+					</div>
+					<ul id="check-list">
+						<li><a href="javascript:;">火锅</a></li>
+						<li><a href="javascript:;">锅内锅外</a></li>
+						<li><a href="javascript:;">自助</a></li>
+						<li><a href="javascript:;">蛋糕</a></li>
+						<li><a href="javascript:;">哈根达斯</a></li>
+						<li><a href="javascript:;">巴菲盛宴</a></li>
+						<li><a href="javascript:;">烤肉</a></li>
+						<li><a href="javascript:;">知味观</a></li>
+						<li><a href="javascript:;">肯德基</a></li>
+					</ul>
+				</form>
+			</div>
+			<div id="header-right">
+				<ul>
+					<li><a href="help.html"><img src="images/1.png" ></a></li>
+					<li><a href="help.html"><img src="images/2.png" ></a></li>
+					<li><a href="help.html"><img src="images/3.png" ></a></li>
+				</ul>
+			</div>
+			<div id="header-list">
+			<ul>
+				<li id="li1">全部分类</li>
+				<li id="li2" class="li"><a href="index.html">首页</a></li>
+				<li id="li3" class="li"><a href="javascript:;">今日新单</a></li>
+				<li id="li4" class="li"><a href="product.html">美食</a></li>
+				<li id="li5" class="li"><a href="javascript:;">身边外卖</a></li>
+			</ul>
+			</div>
+		</div>
+     </div>
+	</div>
+    <div class="containerFood">
+        
+        <div class="nav_wrap">
+            <ul>
+                <li><a href="#">杭州团购</a></li>
+                <span>》 </span>
+                <li><a href="#">美食团购</a></li>
+                <span>》 </span>
+                <li><a href="#">火锅</a></li>
+                <span>》 </span>
+                <li><a href="#">江干区</a></li>
+                <span>》 </span>
+                <li><a href="#">下沙</a></li>
+                <span>》</span>
+                <li>德庄火锅</li>
+            </ul>
+        </div>
+        <div class="top_wrap">
+           <div class="top_title">
+                <h1>【下沙】德庄火锅</h1>
+               <p>仅售88元！价值100元的代金券1张，除饮料酒水香烟外全场通用，可叠加使用，提供免费WiFi。</p>
+           </div>
+            <div class="top_b">
+                <div class="top_left">
+                    <div class="icon clear">
+                        <i class="icon1"></i>
+                        <i class="icon2"></i>
+                    </div>
+                    <div class="slider">
+                        <div class="bannerImg">
+                            <div class="banner_list" style="background: url('img/l1.jpg') top center no-repeat"></div>
+                            <div class="banner_list" style="background: url('img/l2.jpg') top center no-repeat"></div>
+                            <div class="banner_list" style="background: url('img/l3.jpg') top center no-repeat"></div>
+                            <div class="banner_list" style="background: url('img/l4.jpg') top center no-repeat"></div>
+                            <div class="banner_list" style="background: url('img/l5.jpg') top center no-repeat"></div>
+                        </div>
+                        <div class="sliderIndex">
+                            <a href="#" class="on item" index="1"><img src="img/b1.jpg"></a>
+                            <a href="#" class="item" index="2"><img src="img/b2.jpg"></a>
+                            <a href="#" class="item" index="3"><img src="img/b3.jpg"></a>
+                            <a href="#" class="item" index="4"><img src="img/b4.jpg"></a>
+                            <a href="#" class="item" index="5"><img src="img/b5.jpg"></a>
+                        </div>
+                       <p class="pre"><a href="javascript:;" class="prev arrow"></a></p>
+                       <p class="nex"><a href="javascript:;" class="next arrow"></a></p>
+                    </div>
+                </div>
+                <div class="top_right">
+                    <div class="price">
+                        <span >团购价</span>
+                        <h2>
+                            <span class="moneyLabel">￥</span>
+                            <i></i>
+                            <i></i>
+                        </h2>
+                        <span>门店价</span>
+                        <s>￥100</s>
+                    </div>
+                    <div class="comment">
+                        <ul>
+                            <li>已售<span>5420</span></li>
+                            <li>|</li>
+                            <li><a href="#">3.8</a>分</li>
+                            <li>|</li>
+                            <li><a href="#">755</a>人评价</li>
+                        </ul>
+                    </div>
+                    <div class="date">
+                        <span>有效期</span>
+                        <span>截止到2017.10.31 <span>周末、法定节假日通用 </span></span>
+                    </div>
+                    <!--<form action="#" id="count">-->
+                        <div class="count">
+                            <span class="count_num">数量</span>
+                            <button class="reduce">-</button>
+                            <input type="text" value="1" class="inputNum">
+                            <button class="add">+</button>
+                            <span class="re_tip"></span>
+                            <div class="addCart1">
+                                <a href="myOrderSubmit.html" class="addCart"></a>
+                                <a href="#" class="sc">
+                                    <i>☆</i>
+                                    <span>收藏(<b>216</b>)</span>
+                                </a>
+                                <a href="#" class="fx"><span>分享到</span></a>
+                            </div>
+                        </div>
+                    <!--</form>-->
+                    <div class="promise">
+                        <span>服务承诺</span>
+                        <a href="help.html">
+                            <span class="sst">
+                             <i></i>
+                            随时退
+                            </span>
+                        </a>
+                        <a href="help.html">
+                            <span class="gqt">
+                             <i></i>
+                             过期退
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="zspj">
+                             <i></i>
+                            真实评价
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="detail_tips">
+                <div class="detail_tips_text">
+                    <p>亲爱的用户，本次团购有效期延长至2017年10月31日，感谢您的支持，祝消费愉快~</p>
+                </div>
+            </div>
+            <div class="detail_flat_wrap">
+                <ul>
+                    <li class="item on"><a href="#shopPlace">商家位置</a></li>
+                    <li class="item"><a href="#shopInfo">购买须知</a></li>
+                    <li class="item"><a href="#shopDetail">本单详情</a></li>
+                    <li class="item"><a href="#shopIntr">商家介绍</a></li>
+                    <li class="item"><a href="#shopAppraise">消费评价(755)</a></li>
+                </ul>
+            </div>
+            <div class="detail_content">
+                <div>
+                    <h3 id="shopPlace">商家位置</h3>
+                    <div class="detail_content_c">
+                        <img src="img/1.jpg" alt="">
+                        <div class="detail_content_r">
+                            <h5><a href="#">德庄火锅（宝龙城市广场店）</a></h5>
+                            <div content="detail_content_rc">
+                                <p>地址：江干区浙江工商大学北门对面宝龙城市广场1层</p>
+                                <p>
+                                    <a href="#">查看地图</a>
+                                    <a href="#">公交/驾车去这里</a>
+                                </p>
+                                <p>地铁：距文海南路站约884米</p>
+                                <p>电话：0571-89773268</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="shopInfo">购买须知</h3>
+                    <div class="detail_content_c">
+                        <ul>
+                            <li>
+                                <span>有效期</span>
+                                <span>2015.1.14 至 2017.10.31（周末、法定节假日通用）</span>
+                            </li>
+                            <li>
+                                <span>使用时间</span>
+                                <span>10:00-22:00</span>
+                            </li>
+                            <li>
+                                <span>预约提醒</span>
+                                <span>无需预约，消费高峰时可能需要等位</span>
+                            </li>
+                            <li>
+                                <span>限购限用提醒</span>
+                                <span>可叠加使用 </span>
+                            </li>
+                            <li>
+                                <span> 4</span>
+                                <span>不兑现、不找零</span>
+                            </li>
+                            <li>
+                                <span>包间</span>
+                                <span>店内无包间</span>
+                            </li>
+                            <li>
+                                <span>堂食外带</span>
+                                <span>堂食外带均可，可以打包，打包费详情咨询商家</span>
+                            </li>
+                            <li>
+                                <span>温馨提示</span>
+                                <span>请提前3小时购买才可使用</span>
+                            </li>
+                            <li>
+                                <span>1</span>
+                                <span>团购用户不可同时享受商家其他优惠 </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 id="shopDetail">本单详情</h3>
+                    <div class="detail_content_c">
+                        <h4 class="mw">美味尽享</h4>
+                        <ul class="tc" >
+                            <li>套餐内容</li>
+                            <li>单价</li>
+                            <li>数量/规格</li>
+                            <li>小计</li>
+                        </ul>
+                        <ul class="tc td">
+                            <li>代金券</li>
+                            <li>¥100</li>
+                            <li>1张</li>
+                            <li>¥100</li>
+                        </ul>
+                        <ul class="tc td">
+                            <li></li>
+                            <li></li>
+                            <li>价值: ¥100</li>
+                            <li>美团价: ¥88</li>
+                        </ul>
+                        <ul class="xfb">
+                            <li>店内人均消费参考价：45元</li>
+                            <li>适用范围：除饮料酒水香烟外全场通用</li>
+                            <li>店内部分菜品价格参考：</li>
+                            <p>德庄鸳鸯火锅（30.00元/份）</p>
+                            <p>精品肥牛（58.00元/份）</p>
+                            <p>金针菇（10.00元/份）</p>
+                        </ul>
+                        <h4 class="mw1">美团推荐</h4>
+                        <div class="mt_rec">
+                            <img src="img/22.jpg" alt="">
+                            <img src="img/23.jpg" alt="">
+                            <img src="img/24.jpg" alt="">
+                            <img src="img/25.jpg" alt="">
+                            <img src="img/26.jpg" alt="">
+                        </div>
+                        <h4 class="mw1">德庄火锅</h4>
+                        <div class="mt_rec">
+                            <img src="img/27.jpg" alt="">
+                        </div>
+                        <h4 class="mw1" id="shopIntr">商家介绍</h4>
+                        <div class="mt_rec">
+                            <img src="img/10.jpg" alt="">
+                            <img src="img/14.jpg" alt="">
+                            <img src="img/15.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider_wrap">
+            <div>
+                <a href="#" class="mtsj"></a>
+            </div>
+            <div>
+                <a href="#" class="mydy"></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer-nav">
+        <div class="ft-item ft-left">
+            <div>
+                <h3>获取更新</h3>
+                <ul>
+                    <li>
+                        <a href="#">iPhone/Android</a>
+                    </li>
+                    <li>
+                        <a href="#">美团QQ空间</a>
+                    </li>
+                    <li>
+                        <a href="#">美团新浪微博</a>
+                    </li>
+                    <li>
+                        <a href="#">sitemap</a>
+                    </li>
+                    <li>
+                        <a href="#">RSS订阅</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>商务合作</h3>
+                <ul>
+                    <li>
+                        <a href="#">商家合作</a>
+                    </li>
+                    <li>
+                        <a href="#">美团商家营销平台</a>
+                    </li>
+                    <li>
+                        <a href="#">到店餐饮代理商招募</a>
+                    </li>
+                    <li>
+                        <a href="#">市场合作</a>
+                    </li>
+                    <li>
+                        <a href="#">美团联盟</a>
+                    </li>
+                    <li>
+                        <a href="#">美团云</a>
+                    </li>
+                    <li>
+                        <a href="#">廉政邮箱</a>
+                    </li>
+                    <li>
+                        <a href="#">聚宝盆餐饮开发平台</a>
+                    </li>
+                    <li>
+                        <a href="#">美团点评智能收银机</a>
+                    </li>
+                    <li>
+                        <a href="#">点餐秒付合作申请</a>
+                    </li>
+                    <li>
+                        <a href="#">美团智能支付</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>公司信息</h3>
+                <ul>
+                    <li>
+                        <a href="#">关于美团</a>
+                    </li>
+                    <li>
+                        <a href="#">美团承诺</a>
+                    </li>
+                    <li>
+                        <a href="">媒体报道</a>
+                    </li>
+                    <li>
+                        <a href="#">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="#">法律声明</a>
+                    </li>
+                    <li>
+                        <a href="#">用户协议</a>
+                    </li>
+                    <li>
+                        <a href="#">隐私政策</a>
+                    </li>
+                    <li>
+                        <a href="#">商户服务协议</a>
+                    </li>
+                    <li>
+                        <a href="#">美团点评餐饮安全管理办法</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>用户帮助</h3>
+                <ul>
+                    <li>
+                        <a href="help.html">申请退款</a>
+                    </li>
+                    <li>
+                        <a href="help.html">查看美团券密码</a>
+                    </li>
+                    <li>
+                        <a href="help.html">常见问题</a>
+                    </li>
+                    <li>
+                        <a href="help.html">开放API</a>
+                    </li>
+                    <li>
+                        <a href="help.html">反诈骗公告</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="ft-item ft-right">
+            <i></i>
+            <p>客服电话</p>
+            <p class="contact-msg">
+                <span class="contact-number">10107888</span>
+                <span>(9:00-23:00)</span>
+            </p>
+            <p>退款、退换货、查看美团券</p>
+            <p><a href="#">参考教程、轻松搞定！</a></p>
+        </div>
+    </div>
+    <!-- 页尾实现 -->
+    <div id="footer-copy">
+        <p>
+            &copy;2017美团网团购<a href="#">meituan.com</a>京ICP证070791号|京ICP备10211739号|电子公告服务规则
+        </p>
+        <p>广播电视节目制作经营许可证(京)字第03889号</p>
+        <p class="footer-p1">
+            <img src="file/-f=fewww--www-img-wangan.png@3841c15.png" alt="">
+            <span>京公网安备11010502025545号</span>
+        </p>
+        <div class="footer-img1">
+            <a href="#"><img src="file/-f=fewww-www-css-i-logo-license-shandong.png@3841c15.png" alt=""></a>
+            <a href="#"><img src="file/-f=fewww-www-css-i-logo-license-zhejiang.png@3841c15.png" alt=""></a>
+            <a href="#"><img src="file/-f=fewww-www-css-i-logo-gongshang-chongqing.png@3841c15.png" alt=""></a>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/top_wrap_slider.js"></script>
+    <script src="js/add.js"></script>
+	<script src="js/myUI.js"></script>
+	<script src="js/nav-aside.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/tabs.js"></script>
+	<script src="js/help.js"></script>
+</body>
+</html>

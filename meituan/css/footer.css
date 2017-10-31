@@ -1,0 +1,88 @@
+/**footer-cq部分**/
+#footer-nav{
+	width:1170px;
+	margin:0 auto;
+	padding:20px 10px;
+}
+#footer-nav:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+#footer-nav>p{
+	border-top:2px solid #f0f0f0;
+	border-bottom:2px solid #f0f0f0;
+	padding:1px 0;
+	margin:20px auto;
+}
+#footer-nav a{
+	color:#999;
+	font-size:12px;
+	text-decoration:none;
+}
+#footer-nav a:hover{
+	text-decoration:underline;
+}
+#footer-nav>.ft-item{
+  float:left;
+}
+#footer-nav>.ft-left{
+  width:860px;
+  padding-left:10px;
+}
+#footer-nav>.ft-left>div{
+  float:left;
+  width:210px;
+}
+#footer-nav>.ft-left>div>h3{
+  margin-bottom:10px;
+}
+#footer-nav>div.ft-right{
+	float:left;
+	padding-left:30px;padding-top:10px;
+	border-left:2px solid #f0f0f0;
+}
+#footer-nav>.ft-right>i{
+	display:block;
+	width:50px;height:5px;
+	padding-top:40px;
+	border:none;
+	background:url("../images/-f=fewww-www-css-si-footer.png@3841c15.png") no-repeat 0 -80px;
+}
+#footer-nav>.ft-right .contact-number{
+	font-size:18px;
+}
+#footer-nav>.ft-right .contact-msg{
+	margin-bottom:20px;
+}
+#footer-nav>.ft-right>p>a{
+	font-size:12px;
+	color:#2bb8aa;
+}
+/***copy部分***/
+#footer-copy{
+	background:#F9F9F9;
+	padding-top:30px;
+	min-width: 500px;
+}
+#footer-copy p{
+	font-size:15px;
+	text-align:center;
+	color:#bbbbbb;
+	margin-bottom:10px;
+}
+#footer-copy p:not(:first-child){
+	font-size:12px;
+}
+#footer-copy .footer-p1>img{
+	position:relative;
+	top:3px;
+}
+#footer-copy div.footer-img1{
+	text-align:center;
+	min-width:300px;
+	padding:40px;
+}
+#footer-copy .footer-img1>a>img{
+	padding-left:10px;
+}

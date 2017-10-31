@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/tool/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tool/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/tool/scrollReveal.js"></script>
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+</head>
+<body id="bo">
+    <header class="header">
+        <nav class="navbar navbar-default" id="navbar">
+            <div class="container">
+                <div class="header-topbar hidden-xs link-border" data-scroll-reveal="enter right over 1s">
+                    <ul class="site-nav topmenu">
+                        <li><a href=""><i class="fa fa-edit"></i> 闲情逸致</a></li>
+                        <li><a href=""><i class="fa fa-link"></i> 学习网站</a></li>
+                        <li><a href=""><i class="fa fa-bank"></i> 温馨小家</a></li>
+                        <li><a href="" target="_blank"><i class="fa fa-book"></i> 我的简历</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-heart"></i> 关注我 <span class="caret"></span></a>
+                            <ul class="dropdown-menu header-topbar-dropdown-menu">
+                                <li><a href=""><i class="fa fa-weixin"></i> 微信</a></li>
+                                <li><a href=""><i class="fa fa-weibo"></i> 微博</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="javascript:void();">欢迎来访我的博客网站 !</a>
+                    <div class="collapse navbar-collapse" id="header-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden-index active"><a href="" data-cont="博客首页"><i class="fa fa-home"></i> 博客首页</a></li>
+                            <li><a href="">前端学习</a></li>
+                            <li><a href="">后端学习</a></li>
+                            <li><a href="">技术分享</a></li>
+                            <li><a href="">留言板</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="content-wrap">
+            <div class="content">
+                <div id="focusslide" class="carousel slide" data-ride="carousel">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#focusslide" data-slide-to="0" class="active"></li>
+                        <li data-target="#focusslide" data-slide-to="1"></li>
+                        <li data-target="#focusslide" data-slide-to="2"></li>
+                        <li data-target="#focusslide" data-slide-to="3"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner">
+                        <div class="item active"><a href=""><img src="images/slide1.png" alt="First slide"  class="img-responsive"></a></div>
+                        <div class="item"><a href=""><img src="images/slide2.png" alt="Second slide"  class="img-responsive"></a></div>
+                        <div class="item"><a href=""><img src="images/slide3.png" alt="Third slide"  class="img-responsive"></a></div>
+                        <div class="item"><a href=""><img src="images/slide4.png" alt="Third slide"  class="img-responsive"></a></div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="carousel-control left" href="#focusslide" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">上一个</span>
+                    </a>
+                    <a class="carousel-control right" href="#focusslide" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">下一个</span>
+                    </a>
+                </div>
+                <article class="remmond">
+                    <h3><span class="red">【推荐阅读】</span><a href="">推荐文章的标题</a></h3>
+                    <p class="note">这是要推荐的文章的一段话:前端发展到现在，SPA应该已经被应用的非常广了。可惜的是，我们前进的是快，
+                        而人家搜索引擎爬虫跟用户的浏览器设备还跟不上脚步。辛辛苦苦写好的单页应用，结果到了SEO跟浏览器兼容这一步懵逼了。
+                        很多同学肯定都想过服务端渲染的问题。然而一看vue、react关于服务端渲染的文档，可能就被唬住了。之前写好的并不能无缝迁移。
+                        而且，每当有个项目，就需要去run一套node服务。当然，架构能力好些的朋友，可以做好集中化管理。
+                    </p>
+                </article>
+                <article class="excerpt">
+                    <a href="" class="focus" title="JS" target="_blank">
+                        <img src="images/slide1.png" alt="">
+                    </a>
+                    <header>
+                        <a class="cat" href="" target="_blank"> 笔试面试 <i></i></a>
+                        <h3><a href="" title="试题" target="_blank"> 试题 </a></h3>
+                    </header>
+                    <p class="meta">
+                        <time class="time"><i class="glyphicon glyphicon-time"></i> 2017-1-1</time>
+                    </p>
+                    <p class="note">
+                        1. cookie和session, cookie和webStorage的区别，如果cookie被篡改怎么办
+                        2. 跨域的方法 3. 因为引用计数产生的内存泄漏，在ES6中的解决办法是什么4. js中基本类型在内存中存储方式是什么，引用类型的存储方式是什么
+
+                    </p>
+                    <a href="" class="readAll">阅读全文</a>
+                </article>
+                <article class="excerpt" data-scroll-reveal="enter left and move 30px over .5s">
+                    <a href="" class="focus" title="JS" target="_blank">
+                        <img src="images/slide1.png" alt="">
+                    </a>
+                    <header>
+                        <a class="cat" href="" target="_blank"> 笔试面试 <i></i></a>
+                        <h3><a href="" title="试题" target="_blank"> 试题 </a></h3>
+                    </header>
+                    <p class="meta">
+                        <time class="time"><i class="glyphicon glyphicon-time"></i> 2017-1-1</time>
+                    </p>
+                    <p class="note">
+                        1. cookie和session, cookie和webStorage的区别，如果cookie被篡改怎么办
+                        2. 跨域的方法 3. 因为引用计数产生的内存泄漏，在ES6中的解决办法是什么4. js中基本类型在内存中存储方式是什么，引用类型的存储方式是什么
+
+                    </p>
+                    <a href="" class="readAll">阅读全文</a>
+                </article>
+                <article class="excerpt" data-scroll-reveal="enter left and move 30px over .5s">
+                    <a href="" class="focus" title="JS" target="_blank">
+                        <img src="images/slide1.png" alt="">
+                    </a>
+                    <header>
+                        <a class="cat" href="" target="_blank"> 笔试面试 <i></i></a>
+                        <h3><a href="" title="试题" target="_blank"> 试题 </a></h3>
+                    </header>
+                    <p class="meta">
+                        <time class="time"><i class="glyphicon glyphicon-time"></i> 2017-1-1</time>
+                    </p>
+                    <p class="note">
+                        1. cookie和session, cookie和webStorage的区别，如果cookie被篡改怎么办
+                        2. 跨域的方法 3. 因为引用计数产生的内存泄漏，在ES6中的解决办法是什么4. js中基本类型在内存中存储方式是什么，引用类型的存储方式是什么
+
+                    </p>
+                    <a href="" class="readAll">阅读全文</a>
+                </article>
+                <article class="excerpt" data-scroll-reveal="enter left and move 30px over .5s">
+                    <a href="" class="focus" title="JS" target="_blank">
+                        <img src="images/slide1.png" alt="">
+                    </a>
+                    <header>
+                        <a class="cat" href="" target="_blank"> 笔试面试 <i></i></a>
+                        <h3><a href="" title="试题" target="_blank"> 试题 </a></h3>
+                    </header>
+                    <p class="meta">
+                        <time class="time"><i class="glyphicon glyphicon-time"></i> 2017-1-1</time>
+                    </p>
+                    <p class="note">
+                        1. cookie和session, cookie和webStorage的区别，如果cookie被篡改怎么办
+                        2. 跨域的方法 3. 因为引用计数产生的内存泄漏，在ES6中的解决办法是什么4. js中基本类型在内存中存储方式是什么，引用类型的存储方式是什么
+
+                    </p>
+                    <a href="" class="readAll">阅读全文</a>
+                </article>
+                <article class="excerpt" data-scroll-reveal="enter left and move 30px over .5s">
+                <a href="" class="focus" title="JS" target="_blank">
+                    <img src="images/slide1.png" alt="">
+                </a>
+                <header>
+                    <a class="cat" href="" target="_blank"> 笔试面试 <i></i></a>
+                    <h3><a href="" title="试题" target="_blank"> 试题 </a></h3>
+                </header>
+                <p class="meta">
+                    <time class="time"><i class="glyphicon glyphicon-time"></i> 2017-1-1</time>
+                </p>
+                <p class="note">
+                    1. cookie和session, cookie和webStorage的区别，如果cookie被篡改怎么办
+                    2. 跨域的方法 3. 因为引用计数产生的内存泄漏，在ES6中的解决办法是什么4. js中基本类型在内存中存储方式是什么，引用类型的存储方式是什么
+
+                </p>
+                <a href="" class="readAll">阅读全文</a>
+                </article>
+            </div>
+            <!--分页-->
+            <div class="pages">
+                <span><a href="">上一页</a></span>
+                <span class="currentPage"><a href="">1</a></span>
+                <span><a href="">2</a></span>
+                <span><a href="">3</a></span>
+                <span><a href="">下一页</a></span>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="fixed">
+                <!--<div class="widget widget=tabs">-->
+                    <!--<ul class="nav nav-tabs" role="tablist">-->
+                        <!--<li role="presentation"></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--搜索-->
+                <div class="side side_search">
+                    <form class="navbar-form" action="" method="get">
+                        <div class="input-group">
+                            <input type="text" name="keyword" class="form-control" size="35" placeholder="请输入关键字" maxlength="20" autocomplete="off" id="keyword">
+                            <span class="input-group-btn"><button class="btn btn-default btn-serach" name="search" type="submit">搜索</button></span>
+                        </div>
+                    </form>
+                </div>
+                <!--切换-->
+                <div class="side side-tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#rank" data-toggle="tab">点击排行</a></li>
+                        <li><a href="#newArticle" data-toggle="tab">最新文章</a></li>
+                        <li><a href="#tab-remmond" data-toggle="tab">站长推荐</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane rank active" id="rank">
+                            <ul>
+                                <li><span>1</span><a href="" target="_blank">从[0,1]区间内任取一点，取到任意一点的概率都是0吗？</a></li>
+                                <li><span>2</span><a href="" target="_blank" title="从[0,1]区间内任取一点，取到任意一点的概率都是0吗？">从[0,1]区间内任取一点，取到任意一点的概率都是0吗？的吗？为什么会出现这一现象？</a></li>
+                                <li><span>3</span><a href="" target="_blank">从[0,1]区间内任取一点，取到任意一点的概率都是0吗？？</a></li>
+                                <li><span>4</span><a href="" target="_blank">从[0,1]区间内任取一点，取到任意一点的概率都是0吗？</a></li>
+                                <li><span>5</span><a href="" target="_blank">从[0,1]区间内任取一点，取到任意一点的概率都是0吗？</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane newArticle" id="newArticle">
+                            <ul>
+                                <li><span>1</span><a href="" target="_blank">到底什么是hash?</a></li>
+                                <li><span>2</span><a href="" target="_blank" title="到底什么是hash?">到底什么是hash?</a></li>
+                                <li><span>3</span><a href="" target="_blank">到底什么是hash？</a></li>
+                                <li><span>4</span><a href="" target="_blank">到底什么是hash?</a></li>
+                                <li><span>5</span><a href="" target="_blank">到底什么是hash</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane tab-remmond" id="tab-remmond">
+                            <ul>
+                                <li><span>1</span><a href="" target="_blank">小马过河 —— Angular 学起来难吗？</a></li>
+                                <li><span>2</span><a href="" target="_blank" title="小马过河 —— Angular 学起来难吗？">小马过河 —— Angular 学起来难吗？？</a></li>
+                                <li><span>3</span><a href="" target="_blank">小马过河 —— Angular 学起来难吗？</a></li>
+                                <li><span>4</span><a href="" target="_blank">小马过河 —— Angular 学起来难吗？</a></li>
+                                <li><span>5</span><a href="" target="_blank">小马过河 —— Angular 学起来难吗？</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--标签云-->
+                <div class="side tags">
+                    <div class="tags-header">
+                        <span class="icon"><i class="fa fa-tags"></i></span>
+                        <h3>标签云</h3>
+                    </div>
+                    <div class="tags-content" id="tags-content">
+                        <a href="#">标签云</a>
+                        <a href="#" class="red">PHP</a>
+                        <a href="#">瀑布流</a>
+                        <a href="#">Tab</a>
+                        <a href="#" class="blue">流体布局</a>
+                        <a href="#">SEO</a>
+                        <a href="#" class="blue">JavaScript</a>
+                        <a href="#" class="red">闭包</a>
+                        <a href="#" class="red">彩蛋</a>
+                        <a href="#" class="green">原型</a>
+                        <a href="#">CSS</a>
+                        <a href="#" class="green">HTML</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="fa fa-copyright">
+              CopyRight © 2017 &nbsp;|&nbsp; 浙ICP备17043358号
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        window.scrollReveal = new scrollReveal(); // css动画效果
+    </script>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="js/tool/jquery-3.2.1.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <!--<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="js/tool/bootstrap.min.js"></script>
+    <script src="js/index/tagCloud.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

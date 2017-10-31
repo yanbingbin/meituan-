@@ -1,0 +1,54 @@
+#lynfooter{width:1170px;margin: 0 auto; position:relative;
+	margin-bottom:90px;
+	}
+a:hover {
+	text-decoration: none;
+	color: #2bb8aa;
+}
+.folder,.details{
+	list-style:none;
+	margin: 30px 0;
+	overflow: hidden;
+}
+.folder>li {
+	float: left;
+	width: 100px;
+	text-align: center;
+	border: 1px solid #ddd;
+	background-color: #eee;
+}
+.folder>li.active {
+	background-color: #ddd;
+}
+.folder>li~li {
+	border-left:none;
+}
+.recommend {
+	width:1130px;
+	padding:20px;
+}
+.recommend>li{
+	float:left;width:100px;height:20px;
+	text-align:center;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.clear:after {
+	content: " ";
+	display: block;
+	visibility: none;
+	clear: both;
+}
+.folder>li:hover{ background: #ddd;}
+a{color:#6E6D6D;}
+ul.details{
+	background: #fff;
+	position:absolute;
+	top:-8px;
+	left:0;
+	display:none;
+	border: 1px solid #ddd;
+}
+ul.show{
+	display:block;
+}

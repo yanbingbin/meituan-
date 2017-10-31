@@ -1,0 +1,116 @@
+.header{
+    width:100%;
+    height: 60px;
+    background-color: #3DC6B6;
+}
+.header img{
+    margin:15px 0 0 230px;
+}
+.tbody{
+    width:100%;
+    padding: 100px 0;
+    background-color: #F7F7F7;
+
+}
+.tbody .tip{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.tbody ul{
+    margin-left: 230px;
+}
+.tbody li{
+    display:inline-block ;
+    height: 260px;
+    margin-right: 40px;
+    margin-top: 0;
+    vertical-align: top;
+}
+.tbody li a{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display:inline-block ;
+    background: url("../img/icon.png") 0 0 no-repeat;
+}
+.tbody li a i{
+    display: inline-block;
+    position: absolute;
+}
+.tbody li a .icon_one, .tbody li a .icon_two,.tbody li a .icon_three, .tbody li a .icon_four, .tbody li a .icon_five{
+    width: 80px;
+    height: 80px;
+    margin: 40px 37px;
+}
+.tbody li a .icon_one{
+    background: url("../img/iconb.png") 0 -121px no-repeat;
+}
+.tbody li a .icon_two{
+    background: url("../img/iconb.png") 0 -201px no-repeat;
+}
+.tbody li a .icon_three{
+    background: url("../img/iconb.png") 0 -281px no-repeat;
+}
+.tbody li a .icon_four{
+    background: url("../img/iconb.png") 0 -361px no-repeat;
+}
+.tbody li a .icon_five{
+    background: url("../img/iconb.png") 0 -441px no-repeat;
+}
+.tbody li a:hover .icon_one,.tbody li a:hover .icon_two,  .tbody li a:hover .icon_three,  .tbody li a:hover .icon_four,  .tbody li a:hover .icon_five{
+    width: 110px;
+    height:107px;
+    margin: 22px 27px;
+}
+.tbody li a:hover .icon_one{
+    background: url("../img/icon.png") 0 -152px no-repeat;
+}
+.tbody li a:hover .icon_two{
+    background: url("../img/icon.png") 0 -258px no-repeat;
+}
+.tbody li a:hover .icon_three{
+    background: url("../img/icon.png") 0 -362px no-repeat;
+}
+.tbody li a:hover .icon_four{
+    background: url("../img/icon.png") 0 -466px no-repeat;
+}
+.tbody li a:hover .icon_five{
+    background: url("../img/icon.png") 0 -570px no-repeat;
+}
+.tbody li .content{
+    width: 160px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.tbody li .content strong{
+    width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+}
+.footer{
+    width:100%;
+    height: 100px;
+    text-align: center;
+}
+.footer li{
+    display:inline-block ;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+.footer li a{
+    color:#3DC6B6;
+}
+.footer li a:hover{
+    text-decoration: underline;
+}
+.footer p a{
+    color: #666;
+}
+.footer p a:hover{
+    text-decoration: underline;
+}

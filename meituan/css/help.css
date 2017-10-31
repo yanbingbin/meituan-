@@ -1,0 +1,236 @@
+html{
+  background:#F9F9F9;
+}
+.main1{
+  position:relative;
+  width:1170px;
+  margin:0 auto;
+}
+.left1{
+  float:left;
+}
+.right1{
+  float:right;
+}
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+#help{
+  width:860px;
+  border:1px solid #eee;
+  margin-top:10px;
+  box-sizing:border-box;
+}
+#help-list{
+  margin:0 auto;
+  margin-top:28px;
+  width:800px;
+}
+#help-list li{
+  width:100px;
+  text-align:center;
+  line-height:25px;
+  border:1px solid #eee;
+  box-sizing:border-box;
+}
+#help-list  li a:hover{
+  color:#959595;
+  text-decoration:underline;
+}
+li.selected,#help-list li:hover{
+  background:#eee;
+}
+#selfsevice{
+  width:800px;
+  margin:0 auto;
+  margin-top:50px;
+}
+#selfsevice-tags{
+  padding:10px;
+  border-bottom:2px solid #ddd;
+}
+#selfsevice-tags li{
+  height:120px;
+  margin:0 25px;
+  text-align:center;
+  position:relative;
+  width:104px;
+}
+#selfsevice ul li a b{
+  width:60px;
+  height:60px;
+  display:block;
+  background:url("../images/selfservice.png") no-repeat 0 -71px;
+  margin:0 auto;
+}
+#selfsevice ul li:first-child a b{
+  background-position:0 -381px;
+}
+#selfsevice ul li:nth-child(3) a b{
+  background-position:0 -195px;
+}
+#selfsevice ul li:last-child a b{
+  background-position:0 -319px;
+}
+#selfsevice ul li a span{
+  position:relative;
+  top:20px;
+  font-weight:700;
+  color:#666;
+  font-size:14px;
+}
+#selfsevice ul li a span.hover{
+  color:#2bb8aa;
+}
+#selfsevice ul li a i.arrow{
+  background:url("../images/selfservice.png");
+  display:block;
+  width:10px;
+  height:7px;
+  top:45px;
+  border:none;
+  left:52px;
+}
+#selfsevice div a{
+  font-size:14px;
+  color:#2bb8aa;
+}
+#selfsevice div a:hover{
+  text-decoration:underline;
+}
+#selfsevice div b{
+  display:inline-block;
+  width:7px;height:7px;border-radius:50%;
+  background:#2DB8AD;
+  position:relative;
+  bottom:2px;
+}
+#selfsevice div p{
+  line-height:20px;
+}
+#sevice_aside{
+  width:286px;
+  height:860px;
+  border:1px solid #eee;
+  margin-top:10px;
+}
+#sevice_aside ul{
+  width: 216px;
+  margin:0 auto;
+}
+#sevice_aside ul li{
+  height:100px;
+  border-bottom:1px solid #eee;
+}
+#sevice_aside ul li b{
+  background:url(../images/s2.png) no-repeat 0 -42px;
+  display:inline-block;width:26px;height:20px;
+  position:relative;top:3px;
+  margin:0 5px;
+}
+#sevice_aside ul li p span{
+  font-size:16px;
+  font-weight:600;
+  color:#666;
+}
+#sevice_aside ul li>span{
+  display:block;
+  margin-left:49px;
+  font-size:12px;
+}
+#sevice_aside>p{
+  width:206px;
+  text-align:center;
+  margin:20px auto;
+}
+#sevice_aside>p:nth-child(2){
+  font-weight:bold;
+  color:#666;
+  text-align:left;
+}
+/*#faq   #newbie  --start--*/
+#faq,#newbie{
+  width:800px;
+  margin:0 auto;
+  margin-top:30px;
+  /*background:orange;*/
+}
+#faq>ul.faq-nav li{
+  float:left;
+  margin:2px 15px 25px 1px;
+}
+#faq>ul.faq-nav li>a{
+  font-size:14px;
+  padding:1px 2px;
+  color:#2DB8AD;
+}
+#faq>h2{
+  border-bottom:2px solid #ddd;
+  margin:10px 5px;
+}
+#faq>h2>.headline-content{
+  border-bottom:2px solid #333;
+  margin-bottom:-2px;
+  display:inline-block;
+}
+
+#newbie>ul>li,#faq>ul:not(:first-child)>li{
+  border-bottom:1px solid #eee;
+  padding:5px 20px;
+  position:relative;
+}
+#newbie>ul>li i,#faq>ul:not(:first-child)>li i{
+  position:absolute;
+  right:20px;
+  top:25px;
+  border-width:5px;
+}
+#newbie>ul>li .accordion_head,#faq>ul:not(:first-child)>li .accordion_head{
+  height:40px;
+  line-height:40px;
+  cursor:pointer;
+}
+#newbie>ul>li div.accordion_item,#faq>ul:not(:first-child)>li div.accordion_item{
+  transition:all 5s linear;
+}
+#newbie>ul>li div.accordion_item li,#faq>ul:not(:first-child)>li div.accordion_item li{
+  list-style-type:disc;
+  list-style-position:inside;
+}
+#newbie>ul>li div.accordion_item a,#faq>ul:not(:first-child)>li div.accordion_item a{
+  color:#2BB8AA;
+}
+#newbie>ul>li div.accordion_item img,#faq>ul:not(:first-child)>li div.accordion_item img{
+  width:650px;
+}
+
+/*#faq   #newbie  --end--*/
+
+/*lyn:#tutorial #seatfaq #bookfaq*/
+
+#help #bookfaq .nav-show,
+#help #seatfaq .nav-show{
+  padding: 30px 50px;
+}
+#help #bookfaq .nav-show li,
+#help #seatfaq .nav-show li{
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+#seatfaq>ul>li i,#faq>ul:not(:first-child)>li i,
+#bookfaq>ul>li i,#faq>ul:not(:first-child)>li i{
+  position:absolute;
+  right:20px;
+  top:25px;
+  border-width:5px;
+}
+#help #bookfaq .nav-show .nav-hide,
+#help #seatfaq .nav-show .nav-hide{
+  display: none;
+}
+/*lyn:#tutorial #seatfaq #bookfaq*/

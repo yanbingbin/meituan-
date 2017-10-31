@@ -1,0 +1,180 @@
+/**全部样式**/
+div.main {
+			width: 1170px;
+			margin: 0 auto;
+		}	
+
+div.content{
+  display:flex;
+}
+/*左边列表*/
+#choise-list{
+ width:250px;
+ height:480px;
+ background-color:yellow;
+}
+
+/**中间热门团购 滑动广告**/
+#hot_banner{
+ width:725px;
+ height:480px;
+ border-right:1px solid #eee;
+ border-bottom:1px solid #eee;
+ box-sizing:border-box;
+ margin-left:250px;
+}
+
+/**右边二维码 每日更新**/
+#er_new{
+ width:200px;
+ height:480px;
+ border-right:1px solid #eee;
+ border-bottom:1px solid #eee;
+ box-sizing:border-box;
+}
+
+#er_new .qrcode-img{
+ height:160px;
+ line-height:160px;
+ text-align:center;
+ border-bottom:2px solid #eee
+}
+#er_new .everyday_new{
+  text-align:center;
+  height:320px;
+}
+
+.everyday_new>h1{
+  padding-top:60px;
+}
+
+/**中间上半部分**/
+#hot_banner .up_part{
+ height:160px;
+ position:relative;
+}
+div.content-title{
+ height:53px;
+ border-bottom:1px solid #eee;
+/* overflow:hidden;*/
+ position:relative;
+}
+div.content-title div.label{
+ float: left;
+ margin:0 20px 0 20px;
+ line-height:53px;
+}
+
+div.content-title div.content_hot-groupbuy{
+ float: left;
+ line-height:53px;
+ height:53px;
+ overflow:hidden;
+}
+div.content-title ul{
+width:500px;
+/*overflow:hidden;*/
+}
+div.content-title ul li{
+float: left;
+height:36px;
+margin-right:20px;
+}
+div.content-title ul li a{
+ font-size:12px;
+ color:#666;
+}
+div.content-title ul li a:hover{
+ color:#2BB8AA;
+}
+#hot-buy{
+height:53px;
+ position:absolute;
+ width:720px;
+}
+/**第二行*/
+div.content_allblock{
+ float: left;
+/* line-height:53px;*/
+ height:53px;
+           /*overflow:hidden;  */
+/*position:relative;*/
+}
+
+.hide{
+overflow:hidden; 
+}
+ul.showAll{
+  margin-top:15px;
+}
+#area{
+height:53px;    /*变height:75px;*/
+ position:absolute;
+top:54px;
+width:720px;
+                   /*z-index:100;*/
+/*                   background-color:white;*/
+
+}
+#hotbiness{
+height:53px;
+ position:absolute;
+ top:106px;
+width:720px;
+
+
+}
+div.content_allblock>a{
+  float:right;
+  position:relative;
+  margin-top:12px;
+  width:50px;
+  height:25px;
+  line-height:25px;
+  text-align:center;
+  border:1px solid #eee;
+  color:#666;
+}
+div.content_allblock>a:hover{
+   color:#2BB8AA;
+}
+
+div.content_allblock a b{
+   display:inline-block;
+   margin-top:10px;
+   border:5px solid transparent;
+   border-top-color:#ddd;
+ }
+
+
+
+/**第三行**/
+div.content_hot-biness{
+ float: left;
+ line-height:53px;
+ height:53px;
+ overflow:hidden;
+}
+
+
+/*banner部分*/
+div.banner{
+display:flex;
+}
+/*左边 */
+div.banner .left-choise{
+ width: 350px;
+ marin-right:15px;
+}
+div.banner .left-choise>img{
+ width:350px;
+height:318px;
+}
+/**右边*/
+div.banner .right-choise{
+ width:350px;
+}
+div.banner .right-choise>img{
+width:350px;
+height:318px;
+}

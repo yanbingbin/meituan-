@@ -1,0 +1,173 @@
+/*美团我的订单*/
+#myorder{
+ border-top:1px solid #eee;
+ border-bottom:1px solid #eee;
+ list-style:none;
+ display:flex;
+}
+/*左边*/
+#myorder>.left{
+width:150px;
+background:#f9f9f9;
+border:1px solid #eee;
+box-sizing:border-box;
+
+}
+/*所有ul 的li*/
+#mymainindex li,#myolist li,#mycommend li,#mypower li,#mycount li{
+  width:150px;
+  text-align:center;
+  padding:5px 0 5px 0;
+  position:relative;
+}
+
+
+/*鼠标悬停字变色*/
+#myorder .left ul li:not(:first-child):hover a{
+ color:#2bb8aa;
+}
+/*我的主页*/
+#mymainindex li{
+  height:50px;
+  line-height:50px;
+}
+/*所有ul下边框*/
+#myorder .left ul{
+   border-bottom:1px solid #eee;
+}
+
+/*小圆点*/
+#myorder .left ul li a sub{
+ display:inline-block;
+ width:3px;
+ height:3px;
+ background-color: #dedede;
+ position:relative;
+ bottom:7px;
+ left:-6px;
+ transition:all .3s linear; 
+}
+#myorder .left ul li:not(:first-child) a{
+padding-right:20px;
+
+}
+
+#myorder .left ul li:hover sub{
+ width:3px;
+ height:3px;
+ background-color: #2bb8aa;
+}
+/*默认字体*/
+#mymainindex li a,#myolist li a,#mycommend li a,#mypower li a,#mycount li a{
+  font-size:14px;
+  color:#666;
+}
+#mymainindex span,#myolist span,#mycommend span,#mypower span,#mycount span{
+ font-weight:bold;
+}
+/*我的订单*/
+#myolist li{
+ height:25px;
+ line-height:25px;
+}
+#myolist li:first-child{
+ height:40px;
+ line-height:40px;
+}
+
+.checked{
+background-color: #2bb8aa;
+color:#fff;
+}
+li:not(:first-child).checked>a{
+background:url(../images/right_arrow.png) no-repeat right center;
+}
+/*右边*/
+#order>aside.right{
+width:990px;
+box-sizing:border-box;
+background: #fff;
+}
+
+#choise{
+width: 100px;
+padding-left:10px;
+}
+#myorder .right .choise{
+ width:900px;
+ margin:10px 20px 10px 10px;
+ padding:5px 0 5px 10px;
+box-sizing:border-box;
+}
+div.operate{
+width:960px;
+height:40px;
+line-height:40px;
+display:flex;
+margin:10px 20px 20px 20px;
+padding-right:20px;
+background:#f9f9f9;
+}
+div.operate div:first-child{
+ width:300px;
+ text-align:center;
+}
+div.operate div:nth-child(2){
+ width:200px;
+ text-align:center;
+}
+div.operate div:nth-child(3){
+ width:200px;
+ text-align:center;
+}
+div.operate div:nth-child(4){
+ width:100px;
+ text-align:center;
+}
+div.operate div:last-child{
+ width:200px;
+ text-align:center;
+}
+
+#tb1{
+ width:900px;
+ margin:5px 10px 10px 90px;
+}
+#tb1:nth-child(2n+1) tr{
+height:20px;
+}
+#tb1:nth-child(2n) tr{
+padding-top:20px;
+height:80px;
+}
+#tb1 tr:nth-child(2n+1) td a{
+display:inline-block;
+height:12px;
+line-height:12px;
+padding-left:12px;
+background:url(../images/s0.meituan.net.png) no-repeat 0 -12px;
+position:relative;
+right:-627px;
+}
+#tb1 tr:nth-child(2n+1) td a:hover{
+background:url(../images/s0.meituan.net.png) no-repeat; 
+}
+#tb1 tr:nth-child(2n) td:first-child{
+ width:100px;
+}
+#tb1 tr:nth-child(2n) td:nth-child(2){
+ width:150px;
+ padding-left:10px;
+}
+#tb1 tr:nth-child(2n) td:nth-child(3){
+ width:110px;
+ text-align:center;
+}
+#tb1 tr:nth-child(2n) td:nth-child(4){
+ width:250px;
+ text-align:center;
+}
+#tb1 tr:nth-child(2n) td:nth-child(5){
+width: 160px;
+}
+

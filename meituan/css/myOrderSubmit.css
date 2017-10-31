@@ -1,0 +1,262 @@
+/*button,input{*/
+    /*outline:none;*/
+    /*padding:0;*/
+    /*margin:0;*/
+    /*border:none;*/
+/*}*/
+/*提交订单页*/
+div.branding{
+    width: 1170px;
+    padding-top: 40px;
+    padding-bottom:30px;
+    background-color: #fff;
+}
+a.site-logo{
+    float: left;
+    margin-left: 35px;
+}
+
+div.progress-barbox{
+    margin-left:50px;
+    float: left;
+    position:relative;
+    top:20px;
+
+}
+#list-orderprogress{
+
+}
+#list-orderprogress li{
+    float: left;
+    width: 150px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
+    height:10px;
+    line-height:10px;
+}
+#progress-bar{
+    /*width: 520px;*/
+}
+a.site-commitment{
+    float: right;
+    margin-right: 60px;
+}
+a.site-commitment img{
+    margin:0 5px 0 10px
+}
+
+/*
+*订单提交内容表格
+*/
+div.container_tb1{
+    width: 1170px;
+    background-color: #fff;
+}
+#tb1{
+    margin: 0 auto;
+    width: 1110px;
+    padding:0 5px 0 5px
+}
+#tb1 tbody tr{
+    border-bottom:1px solid #ddd;
+}
+#tb1 th{
+    height:30px;
+    text-align: center;
+}
+#tb1 td{
+    height:50px;
+    text-align: center;
+}
+#tb1 th{
+    padding-left:5px;
+}
+#tb1 tr{
+    background-color: #fff;
+}
+#tb1 thead tr{
+    background-color:#f7f7f7;
+}
+#tb1 th:first-child{
+    text-align:left;
+}
+#tb1 td:first-child{
+   text-align:left;
+}
+/*
+*提示1件框
+ */
+div.alert1{
+    text-align: center;
+    background-color: #fff6DB;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom:10px;
+    position:relative;
+}
+div.alert1 .error{
+    display: inline-block;
+    margin-right:5px;
+    width: 17px;
+    height: 17px;
+    background:url(../images/s0.meituan.net.png) 0 -86px;
+    position:relative;
+    top:3px;
+}
+div.alert1 .close{
+    position:absolute;
+    right:15px;
+    top:18px;
+    width: 13px;
+    height: 13px;
+    background:url(../images/s1.meituan.net.png) 0 35px;
+}
+div.alert1 .close:hover{
+    background-position: 0 -17px;
+    cursor: pointer;
+    color:#2bb8aa;
+}
+
+div.countNum{
+    width:70px;
+    border:1px solid #ddd;
+    position:relative;
+    left: 70px;
+}
+div.countNum input{
+    padding:0;
+    margin:0;
+    outline: none;
+    border:none;
+    width: 20px;
+    height: 40px;
+    text-align: center;
+}
+div.countNum button{
+    padding:0;
+    margin:0;
+    outline: none;
+    border:none;
+    width: 20px;
+    height:40px;
+}
+div.countNum button:hover{
+    cursor:pointer;
+    background: #ddd;
+}
+
+
+
+div.quan_alert{
+
+    background-color: #f9f9f9;
+}
+div.quan_alert button{
+    margin:0;
+    outline: none;
+    border:none;
+    background-color: #2bb8aa;
+    color:#fff;
+    font-weight:bold;
+    padding:2px 5px 2px 5px
+}
+div.quan_alert input{
+    margin: 0;
+    padding: 0;
+    outline:none;
+    border:1px solid #ddd;
+}
+
+div.quan_alert p{
+    text-align: center;
+    color:orange;
+}
+
+#tb1 tr:last-child td:last-child span,
+#tb1 tbody tr:first-child td:last-child span
+{
+    color:#f76120
+}
+
+#tb1 tr:last-child td:last-child span{
+    font-weight: bold;
+    font-size:25px;
+}
+
+div.show{
+    display:none;
+}
+div.big_deal{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1100px;
+    border:1px solid #ddd;
+    padding-bottom:30px;
+}
+
+div.big_deal h3{
+    font-size:15px;
+    padding:5px 0 5px 15px;
+    background: #f7f7f7;
+    border-bottom:1px solid #eee;
+    margin-bottom: 10px;
+}
+div.big_deal p{
+    margin:5px 0 5px 20px;
+}
+div.big_deal p a{
+    color:#2BB8AA;
+    font-size:14px;
+}
+div.big_deal p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+p.yourphone{
+    margin-left:20px;
+    margin-top: 20px;
+}
+p.yourphone a{
+    color:#2BB8AA;
+}
+p.yourphone a:hover{
+    cursor: pointer;
+}
+div.form-submit{
+    text-align: right;
+    width: 1100px;
+}
+div.form-submit input{
+   border:none;
+    outline:none;
+    padding:5px 10px 5px 10px;
+    background: #2EBDAF;
+   color:#fff;
+    width: 128px;
+    height: 40px;
+    font-size:20px;
+}
+div.form-submit input:hover{
+    background-color:#2db7aa;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

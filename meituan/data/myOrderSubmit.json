@@ -1,0 +1,19 @@
+{
+	"status":1,
+	"result":{
+		"totalMoney":990,
+		"productCount":10,
+		"list":[
+			{
+				"productName":"德庄火锅 单人自助晚餐代金券",
+				"productPrice":88,
+				"productQuentity":1
+			},
+			{
+				"productName":"戈斯汀超级自助美食(午餐自助)",
+				"productPrice":58,
+				"productQuentity":1
+			}
+		]
+	}
+}

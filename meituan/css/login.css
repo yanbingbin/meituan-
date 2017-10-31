@@ -1,0 +1,116 @@
+
+.main{width:1170px;margin: 0 auto;box-sizing:border-box;}
+a{font-size:14px;color:#2bb8aa;text-decoration: underline;}
+a:hover{color:#f60;}
+html{background: #fff;}
+#login-logo{
+	width: 1170px;
+}
+#login-logo img{
+	margin-top:30px;
+	margin-left: 80px;
+}
+#login{
+	background-image: url(../images/loginbg.jpg);
+	background-repeat: no-repeat;
+	background-position: 10% 40%;	
+	width:1170px;height:500px;
+}
+form{
+	width: 600px;height: 300px;
+	float: right;
+	margin-top:100px;
+}
+p.text{
+	width: 280px;
+	height: 30px;
+	margin:0 auto;
+	font-size: 14px;
+	color: #666;
+}
+p.text span.text-left{
+	float: left;
+}
+p.text span.text-right{
+	float: right;
+	display: inline-block;
+	width: 90px;
+	height: 15px;
+}
+#login-phone{
+	display: inline-block;
+	width: 10px;
+	height: 13px;
+	background: url(../images/sprite.png) -879px -678px;
+}
+p.logininput{
+	font-size:22px;margin-left:80px;margin-bottom: 20px;
+}
+#uname,#upwd{
+	width: 300px;height: 40px;
+	opacity: 0.8;
+	font-size:18px;border:2px solid #2bb8aa;
+	background-image: url("../images/user.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-indent: 10px;
+	box-sizing:border-box;
+	padding-right:40px;
+}
+#upwd{background-image: url("../images/pwd.png");}
+span.tip{font-size:14px;color:#f60;display:none;}
+#btn{
+	width: 300px;height: 45px;
+	margin-left: 150px;
+	font-size: 24px;
+	background: #2bb8aa;border:none;
+	cursor:pointer;color: #fff;
+	border-radius:5px;
+}
+a.to-register{
+	margin-left: 150px;
+	display: inline-block;
+}
+
+.footer{
+	margin: 0 auto 30px;
+    clear: both;
+    width: 980px;
+    font-size: 12px;
+    color: #999;
+}
+.footer .footer-nav{
+	margin-bottom: 20px;
+    padding: 12px 0;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+.footer .footer-nav ul{
+	float: left;
+    width: 594px;
+    color: #EEE;
+}
+.footer .footer-nav li{
+	float: left;
+    margin: 5px 0;
+    padding: 0 16px;
+    line-height: 14px;
+    border-right: 1px solid #EEE;
+}
+.footer .footer-nav li a{
+	color:#999;
+	text-decoration:none;
+}
+.footer .footer-nav .first{
+	padding-left:0;
+}
+.footer .footer-nav .last{
+	border-right: none;
+}
+
+.footer .copyright{
+	text-align: left;
+    clear: both;
+    font-size: 12px;
+    font-family: initial;
+}

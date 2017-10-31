@@ -1,0 +1,17 @@
+ /*地区鼠标悬停全部显示*/
+ $("div.content_allblock>a").hover(()=>{
+		   $("div.content_allblock").removeClass("hide");
+		   $("#area").css({
+			   height:75,
+				 zIndex:100,
+         backgroundColor:"white"
+			 })
+		 })
+    $("#area").mouseleave(()=>{
+			 $("div.content_allblock").addClass("hide");
+	   	$("#area").css({
+			   height:52,
+				 zIndex:1,
+         backgroundColor:"#f9f9f9"
+			 })
+		})

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>您已退出登录,3秒后跳回首页</p>
+<script>
+   sessionStorage.removeItem("uname");
+        setTimeout(function () {
+            location.href="index.html"
+        },3000);
+
+</script>
+</body>
+</html>

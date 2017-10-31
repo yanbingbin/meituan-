@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/myUI.css">
+  <link rel="stylesheet" href="css/myOrderSubmit.css">
+ </head>
+ <body>
+	<div class="main" id="cartList">
+		<!--顶部信息-->
+		<div id="topmsg">
+			<ul id="topmsg-left">
+				<li><img src="images/star1.png" alt="">&nbsp;收藏美团</li>
+				<li id="loginSession"><a href="login.html" class="loginColor">登录</a>&nbsp;&nbsp;
+					<a href="register.html">注册</a>&nbsp;&nbsp;|
+				</li>
+			</ul>
+			<ul id="topmsg-right">
+				<li class="nabla"><a href="order.html">我的订单</a></li>
+				<li class="nabla dropdown account">
+					<a class="dropdown-btn" data-trigger="dropdown" href="order.html">我的美团&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="order.html">我的订单</a></li>
+						<li class="item"><a href="order.html">我的评价</a></li>
+						<li class="item"><a href="order.html">我的收藏</a></li>
+						<li class="item"><a href="order.html">抵用券</a></li>
+						<li class="item"><a href="order.html">我的余额</a></li>
+						<li class="item"><a href="order.html">账户设置</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown history">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">最近浏览&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="empty">暂无浏览记录</li>
+					</ul>
+				</li>
+				<li class="nabla dropdown isSale">
+					<a class="dropdown-btn" data-trigger="dropdown" href="help.html">联系客服&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="help.html">申请退款</a></li>
+						<li class="item"><a href="help.html">申请退换货</a></li>
+						<li class="item"><a href="help.html">查看美团券</a></li>
+						<li class="item"><a href="help.html">换绑手机</a></li>
+						<li class="item"><a href="help.html">常见问题</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown merchant">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">我是商家&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="merchantCenter.html">商家合作中心</a></li>
+						<li class="item"><a href="merchantCenter.html">我想合作</a></li>
+						<li class="item"><a href="merchantCenter.html">手机免费开店</a></li>
+						<li class="item"><a href="merchantCenter.html">商家营销平台</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown recruit">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">代理商招募&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="agency.html">餐饮代理商招募</a></li>
+						<li class="item"><a href="agency.html">非餐饮代理商招募</a></li>
+					</ul>
+				</li>
+				<li class="nabla dropdown more">
+					<a class="dropdown-btn" data-trigger="dropdown" href="javascript:;">更多&nbsp;<i></i></a>
+					<ul class="dropdown-menu fade">
+						<li class="item"><a href="javascript:;">手机版</a></li>
+						<li class="item"><a href="javascript:;">邀请好友</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--订单提交进程-->
+		<div class="branding clear">
+			<a href="index.html" class="site-logo">
+				<img src="images/logo.png">
+			</a>
+			<div class="progress-barbox">
+				<ul id="list-orderprogress">
+					<li>
+						<span>1.提交订单</span>
+					</li>
+					<li>
+						<span>2.选择支付方式</span>
+					</li>
+					<li>
+						<span>3.购买成功</span>
+					</li>
+				</ul>
+				<progress value="0.3" style="width:550px;height:3px" id="progress-bar"></progress>
+			</div>
+			<a href="help.html" class="site-commitment">
+				<img src="images/1.png" alt="">
+				<img src="images/2.png" alt="">
+				<img src="images/3.png" alt="">
+			</a>
+		</div>
+		<!--订单内容数量-->
+		<div class="container_tb1">
+			<!--提示框-->
+			<div class="alert1" style="display:none">
+                  <span class="error"></span>
+				您至少需要购买一件
+				<span class="close"></span>
+			</div>
+			<!--订单表格-->
+			<table id="tb1">
+				<thead>
+				    <tr>
+						<th>项目</th>
+						<th>单价</th>
+						<th>数量</th>
+						<th>总价</th>
+					</tr>
+				</thead>
+				<tbody>
+			        <tr v-for="(item,index) in productList">
+						<td><a href="#">{{item.productName}}</a></td>
+						<td>{{item.productPrice | formatMoney}}</td>
+						<td>
+							<div class="countNum">
+								<button @click="changeMoney(item,-1)">-</button>
+								<input type="text" value="1" v-model="item.productQuentity">
+								<button @click="changeMoney(item,1)">+</button>
+							</div>
+						</td>
+						<td>
+							<span>{{item.productQuentity * item.productPrice  | formatMoney}}</span>
+						</td>
+					</tr>
+			        <tr>
+						<td></td>
+						<td></td>
+						<td colspan="2">
+							<label for="input1">
+								<input type="checkbox" id="input1" @click="selectedDiscount">使用抵用券抵扣：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							    <span>{{productCount | formatMoney}}</span>
+							</label>
+						</td>
+					</tr>
+			        <tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>
+							应付金额：<span>{{totalMoney | formatMoney}}</span>
+						</td>
+					</tr>
+			    </tbody>
+			</table>
+			<div class="big_deal" :class="{'show':noShow}">
+                   <h3>大额单购买提示</h3>
+				   <p>*本单总价超过500元，已超过工行口令卡、招行大众版等的单次支付限额。查看<a>更多银行支付限额详情</a></p>
+				   <p>*您也可以先<a>为美团账户充值，</a>方便您的购买</p>
+			</div>
+			<p class="yourphone">将发送美团券密码至手机号：15858585858<a>绑定新手机号</a></p>
+		    <div class="form-submit">
+				<a href="index.html"><input type="submit" value="提交订单"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+		<!--提交订单页面-->
+
+	</div>
+	<div id="footer-nav">
+		<p></p>
+		<div class="ft-item ft-left">
+			<div>
+				<h3>获取更新</h3>
+				<ul>
+					<li>
+						<a href="#">iPhone/Android</a>
+					</li>
+					<li>
+						<a href="#">美团QQ空间</a>
+					</li>
+					<li>
+						<a href="#">美团新浪微博</a>
+					</li>
+					<li>
+						<a href="#">sitemap</a>
+					</li>
+					<li>
+						<a href="#">RSS订阅</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>商务合作</h3>
+				<ul>
+					<li>
+						<a href="#">商家合作</a>
+					</li>
+					<li>
+						<a href="#">美团商家营销平台</a>
+					</li>
+					<li>
+						<a href="#">到店餐饮代理商招募</a>
+					</li>
+					<li>
+						<a href="#">市场合作</a>
+					</li>
+					<li>
+						<a href="#">美团联盟</a>
+					</li>
+					<li>
+						<a href="#">美团云</a>
+					</li>
+					<li>
+						<a href="#">廉政邮箱</a>
+					</li>
+					<li>
+						<a href="#">聚宝盆餐饮开发平台</a>
+					</li>
+					<li>
+						<a href="#">美团点评智能收银机</a>
+					</li>
+					<li>
+						<a href="#">点餐秒付合作申请</a>
+					</li>
+					<li>
+						<a href="#">美团智能支付</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>公司信息</h3>
+				<ul>
+					<li>
+						<a href="#">关于美团</a>
+					</li>
+					<li>
+						<a href="#">美团承诺</a>
+					</li>
+					<li>
+						<a href="">媒体报道</a>
+					</li>
+					<li>
+						<a href="#">加入我们</a>
+					</li>
+					<li>
+						<a href="#">法律声明</a>
+					</li>
+					<li>
+						<a href="#">用户协议</a>
+					</li>
+					<li>
+						<a href="#">隐私政策</a>
+					</li>
+					<li>
+						<a href="#">商户服务协议</a>
+					</li>
+					<li>
+						<a href="#">美团点评餐饮安全管理办法</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h3>用户帮助</h3>
+				<ul>
+					<li>
+						<a href="help.html">申请退款</a>
+					</li>
+					<li>
+						<a href="help.html">查看美团券密码</a>
+					</li>
+					<li>
+						<a href="help.html">常见问题</a>
+					</li>
+					<li>
+						<a href="help.html">开放API</a>
+					</li>
+					<li>
+						<a href="help.html">反诈骗公告</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="ft-item ft-right">
+			<i></i>
+			<p>客服电话</p>
+			<p class="contact-msg">
+				<span class="contact-number">10107888</span>
+				<span>(9:00-23:00)</span>
+			</p>
+			<p>退款、退换货、查看美团券</p>
+			<p><a href="help.html">参考教程、轻松搞定！</a></p>
+		</div>
+	</div>
+	<!-- 页尾实现 -->
+	<div id="footer-copy">
+		<p>
+			&copy;2017美团网团购<a href="#">meituan.com</a>京ICP证070791号|京ICP备10211739号|电子公告服务规则
+		</p>
+		<p>广播电视节目制作经营许可证(京)字第03889号</p>
+		<p class="footer-p1">
+			<img src="file/-f=fewww--www-img-wangan.png@3841c15.png" alt="">
+			<span>京公网安备11010502025545号</span>
+		</p>
+		<div class="footer-img1">
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-shandong.png@3841c15.png" alt=""></a>
+			<a href="#"><img src="file/-f=fewww-www-css-i-logo-license-zhejiang.png@3841c15.png" alt=""></a>
+			<a href="http://www.bj315.org/xfwq/lstd/201209/t20120910_3344.shtml?dnrpluojqxbceiqq"><img src="file/-f=fewww-www-css-i-logo-gongshang-chongqing.png@3841c15.png" alt=""></a>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/vue-resource.min.js"></script>
+	<script src="js/myUI.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/myOrderSubmit.js"></script>
+	<script src="js/myUI.js"></script>	
+ </body>
+</html>
